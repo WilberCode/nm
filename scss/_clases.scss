@@ -1,0 +1,54 @@
+// BG Colors 
+.bg-medium{
+  background: $first-steelblue-medium; 
+}
+.bg-dark {
+  background: $first-steelblue-dark;
+}
+
+.bg-black {
+  background: $first-steelblue-black;
+}
+
+.bg-jade {
+  background: $second-jade;
+}
+
+.bg-gray-light {
+  background: $gray-light;
+}
+
+// TEXT Colors 
+.text-medium {
+  color: $first-steelblue-medium;
+}
+.text-dark {
+  color: $first-steelblue-dark;
+}
+
+.text-black {
+  color: $first-steelblue-black;
+}
+
+.text-jade {
+  color: $second-jade ;
+}
+
+.text-gray-light {
+  color: $gray-light;
+} 
+
+.akrobat {
+  font-family: 'akrobat';
+}
+
+.container {
+  width: 100%;
+  max-width: 1137px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (max-width: 1156px) {
+    padding-left:.5em;
+    padding-right: .5em;
+  }
+}

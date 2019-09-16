@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+.menu__link{  
+  @apply py-1 text-sm font-bold px-0 block border-r;
+  color:var(--first-steelblue-medium);
+  border-color:currentColor; 
+}
+.services-list li {
+  @apply relative mb-2;
+}   
+.services-list li p{
+  @apply font-bold;
+  color:var(--first-steelblue-black); 
+  font-size: 18px;
+} 
+.services-squard{
+  @apply py-3 px-4 font-bold text-xl text-center;
+  letter-spacing:1.5px;
+}
+.btn{
+    @apply py-2 px-4 rounded text-sm font-semibold align-bottom;
+}
+.btn-blue{
+    @apply bg-blue-500 text-white;
+}
+.btn-delete{
+    @apply bg-red-500 text-white;
+}
+.btn-edit{
+    @apply bg-yellow-600 text-white;
+}
+.btn-blue:hover{
+    @apply bg-blue-600;
+
+}
+.message{
+    @apply flex items-center shadow overflow-hidden rounded w-full mb-2 mt-6;
+}
+.message-icon{
+    @apply w-10 text-center block text-white py-2 px-2;
+}
+.message-text{
+    @apply pl-5 py-2 text-gray-700 block;
+} 
+table tr th{
+    @apply py-3 px-2 bg-blue-500 text-white border-r border-blue-400;
+
+}
+table tr td{
+    @apply py-3 px-2 bg-gray-100 text-gray-600; 
+}
+table tr th, table tr td{
+    @apply text-center;  
+}
+
+.input{
+    @apply py-2 px-4 rounded shadow outline-none appearance-none text-gray-700 w-full
+}

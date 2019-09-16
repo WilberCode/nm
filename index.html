@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="dist/config.css" />
+    <link rel="stylesheet" href="src/css/slick.css" /> 
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js?ver=5.0"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="fonts/styles.css">
+
+    <title>NMespacios</title>
+  </head>
+  <body>
+    <div id="app" class="">
+      <header class="shadow  w-full h-auto  ">
+        <div id="header-wrap" class=" bg-white relative flex flex-wrap justify-between container h-105  lg:h-105">
+          <div class="logo">
+             <a href="/">
+              <img class="relative z-20 " src="img/logonm.png" alt="" />
+            </a>
+          </div>
+          <div class="block lg:hidden mt-3 lg:mt-0 h-48">
+            <button
+              id="toggleNav"
+              class="flex h-30 items-center px-3 py-2 border rounded text-blue-400 border-blue-400 hover:text-blue-700 hover:border-blue-700"
+            >
+              <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <nav id="nav" class="nav z-20  absolute lg:relative w-full lg:w-auto lg:flex  justify-end lg:items-center hidden  h-auto lg:h-105 ">
+            <ul class="menu w-full lg:flex  justify-end lg:items-center  lg:w-auto first-medium">
+              <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="/#">UBICACIÓN</a></li> 
+              <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="/#buttons">CONTACTO</a></li>
+              <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="/#forms">DEPARTAMENTOS</a></li>
+              <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="/#grids">TRANSPARENCIA</a></li>
+              <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="/#crud">NOSOTROS</a></li>
+            </ul>
+          </nav>
+        </div> 
+      </header> 
+      <div class="w-full encabezado relative z-10 flex justify-end parallax-window  py-6" data-parallax="scroll" data-image-src="img/bg-encabezado.jpg">
+        <h1 class="w-full md:max-w-lg  text-center md:text-left py-3 px-5">MAGDALENA RUTTE
+          <span>1</span>
+        </h1>
+      </div>
+      <div class="services">
+          <div class="container flex flex-wrap mt-10">
+              <div class="w-full md:w-2/5">
+                  <h1 class="text-xl font-bold text-black" >Te damos el espacio que necesitas</h1>
+                  <p class="text-xl text-black">En departamentos amplios, funcionales y perfectamente distribuidos que se adaptan a tu estilo de vida.</p>
+                  <ul class="services-list list-none mt-8"> 
+                    <li><p>Iluminación y ventilación natural.</p></li>
+                    <li><p>Sala lounge de uso común.</p></li>
+                    <li><p>Ubicación privilegiada a un paso de San Isidro y cerca al parque Gonzales Prada.</p></li>
+                  </ul>
+                  <ul class="services-characteristics mt-12">
+                    <li> <img src="img/services/relacion.svg" alt=""> <p>Acabados y diseño de excelente <br>
+                        relación calidad > precio </p>
+                    </li>
+                    <li> <img src="img/services/cocina.png" alt=""> <p>Cocina integrada o independiente
+                      </p>
+                    </li>
+                    <li> <img src="img/services/estacionamiento.png" alt=""> <p>Estacionamientos y depósitos
+                      </p>
+                    </li>
+                    <li> <img src="img/services/seguridad.png" alt=""> <p>Seguridad integral en el
+                        edificio <br> y departamentos</p>
+                    </li>
+                    <li> <img src="img/services/ascensor.png" alt=""> <p>02 ascensores
+                      </p>
+                    </li>
+                    <li> <img src="img/services/gas.png" alt=""> <p>Gas natural doméstico </p>
+                    </li>
+                  </ul>
+              </div>
+              <div class=" w-full md:w-3/5 pl-0 md:pl-10 mt-6 md:mt-0">
+                <img class="w-full" src="img/fachada.png" alt="">
+              </div>
+          </div> 
+          <div class="container">
+            <div class="max-w-3xl mx-auto flex flex-wrap justify-around md:justify-between mt-12 md:mt-6">
+                <div class="services-squard mb-6 xs:mb-10 w-full max-w-xs md:max-w-14">
+                    Galerías fotos
+                </div>
+                <div class="services-squard mb-6 xs:mb-10 w-full max-w-xs md:max-w-14">
+                    Departamentos
+                </div>
+                <div class="services-squard mb-6 xs:mb-10 w-full max-w-xs md:max-w-14">
+                    Ubicación
+                </div>
+            </div>
+          </div> 
+          <div class="container">
+              <div class="services-gallery  " data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                  <div class="slider w-full">
+                    <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
+                      <img src="img/gallery/lobby.png" alt="lobby" class="w_100" data-caption="Lobby" />
+                    </div>
+                    <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
+                      <img src="img/gallery/area-comun.png" alt="area comun" class="w_100" data-caption="Sala lounge de uso común" />
+                    </div>
+                    <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
+                      <img src="img/gallery/cocina.png" alt="cocina" class="w_100 " data-caption="Cocina: granito en encimeras de cocina, muebles de MDF, pisos de porcelanato."
+                      />
+                    </div>
+                    <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
+                      <img src="img/gallery/dormitorio-principal.png" alt="dormitorio" class="w_100" data-caption="Dormitorio principal con walk in closet y baño integrado."
+                      />
+                    </div>
+                    <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
+                      <img src="img/gallery/sala.png" alt="sala" class="w_100" data-caption="Sala" />
+                    </div>
+                    <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
+                      <img src="img/gallery/bano.png" alt="baño principal" class="w_100" data-caption="Baño principal. Acabados de calidad."
+                      />
+                    </div>
+                    <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
+                      <img src="img/gallery/dormitorio-secundario.png" alt="dormitorio secundario" class="w_100" data-caption="Dormitorio secundario."
+                      />
+                    </div>
+                  </div>
+                </div>
+          </div>  
+      </div>
+      <div class="overflow" onclick="closeModal(this)"></div>
+      <div class="wrappModal flex justify-center items-center">
+        <div class=" ">
+          <a onclick="closeModal(this)" class="closeModal text-right">
+            <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512">
+              <path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                class=""></path>
+            </svg>
+          </a>
+          <div id="imageModal" class="flex justify-center w-full"></div>
+          <div id="captionModal" class="w_100 text-xs"></div>
+        </div>
+      </div>
+      <div class="container ">
+        <h1 class="akrobat mt-24 text-4xl font-bold">Hola a todos MAGDALENA RUTTE 1</h1>
+      </div> 
+      <div class="container  ">  
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet tenetur tempora dolor, nulla vero officiis magni facilis, sit odio voluptates accusamus exercitationem culpa quasi delectus quidem aliquam similique quisquam.
+      </div> 
+      <div class="container h-40"> 
+      </div> 
+      <div class="container h-40"> 
+      </div> 
+      <div class="container h-40"> 
+      </div> 
+      <div class="container h-40"> 
+      </div> 
+      <div class="container h-40"> 
+      </div> 
+      <div class="container h-40"> 
+      </div> 
+      <div class="container h-40"> 
+      </div> 
+      <div class="container h-40"> 
+      </div> 
+      <div class="container h-40"> 
+      </div> 
+    
+    </div>  
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/ready.js"></script>
+    <script src="dist/js/app.js"></script>
+    <script>
+        showModal = (element) =>{
+          let img = element.getElementsByTagName('img')[0].src;
+          let caption = element.getElementsByTagName('img')[0].dataset.caption;
+          document.getElementById('imageModal').innerHTML = '<img src="'+img+'">';
+          document.getElementById('captionModal').innerHTML = '<p>'+caption+'</p>';
+        
+          document.getElementsByClassName('wrappModal')[0].classList.add('showModal');
+          document.getElementsByClassName('overflow')[0].classList.add('showModalWrapp');
+        }
+        
+        closeModal = () => {
+          document.getElementsByClassName('wrappModal')[0].classList.remove('showModal');
+          document.getElementsByClassName('overflow')[0].classList.remove('showModalWrapp');
+        }
+          
+    </script>
+  </body>
+</html>

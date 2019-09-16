@@ -1,0 +1,269 @@
+:root {
+  --akrobat: "akrobat";
+  --first-steelblue-medium: #333B41;
+  --first-steelblue-dark: #24303B;
+  --first-steelblue-black: #1C2B39;
+  --second-jade: #00a8ac;
+  --gray-light: #F2F2F2;
+}
+
+.bg-medium {
+  background: #333B41;
+}
+
+.bg-dark {
+  background: #24303B;
+}
+
+.bg-black {
+  background: #1C2B39;
+}
+
+.bg-jade {
+  background: #00a8ac;
+}
+
+.bg-gray-light {
+  background: #F2F2F2;
+}
+
+.text-medium {
+  color: #333B41;
+}
+
+.text-dark {
+  color: #24303B;
+}
+
+.text-black {
+  color: #1C2B39;
+}
+
+.text-jade {
+  color: #00a8ac;
+}
+
+.text-gray-light {
+  color: #F2F2F2;
+}
+
+.akrobat {
+  font-family: "akrobat";
+}
+
+.container {
+  width: 100%;
+  max-width: 1137px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 1156px) {
+  .container {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+
+.logo img {
+  width: 151px;
+  height: 201px;
+}
+@media (max-width: 600px) {
+  .logo img {
+    width: 80px;
+    height: auto;
+  }
+}
+
+.menu-item:last-child a {
+  border-right-color: transparent;
+}
+@media (max-width: 1023px) {
+  .menu__link {
+    border: none;
+    transition: padding 0.5s cubic-bezier(0.56, 2.14, 1, 1);
+  }
+  .menu__link:hover {
+    border-color: initial;
+    border-left: 4px solid currentColor;
+    padding-left: 1em;
+    background: rgba(0, 0, 0, 0.05);
+  }
+}
+
+@media (max-width: 1023px) {
+  .nav {
+    top: 201px;
+    left: 0;
+    padding: 0.5em;
+    background: #f7fafc;
+  }
+}
+@media (max-width: 600px) {
+  .nav {
+    top: 105px;
+  }
+}
+
+.encabezado {
+  position: relative;
+  z-index: 1;
+}
+.encabezado h1 {
+  background-color: rgba(51, 59, 65, 0.95);
+  font-size: 2.2rem;
+  color: #ffffff;
+  font-family: "akrobat";
+  font-weight: 700;
+}
+.encabezado h1 span {
+  color: #00a8ac;
+}
+
+.services-list li {
+  padding-left: 20px;
+}
+.services-list li::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #00a8ac;
+  top: 8px;
+  left: 0;
+}
+.services-characteristics {
+  padding-left: 5em;
+}
+.services-characteristics li {
+  position: relative;
+  margin-bottom: 1.7em;
+  display: flex;
+  align-items: center;
+}
+.services-characteristics li img {
+  width: 56px;
+  height: 40px;
+  position: absolute;
+  left: -4.5em;
+}
+.services-characteristics li p {
+  font-family: "akrobat";
+  font-weight: 700;
+  color: #1C2B39;
+  font-size: 20px;
+}
+.services-squard {
+  color: #1C2B39;
+  border: 1.4px solid #00a8ac;
+}
+.services-squard:hover {
+  background: #00a8ac;
+  color: #fff;
+}
+.services-gallery .slick-slide {
+  height: 15vw;
+}
+
+.overflow {
+  background-color: rgba(28, 43, 57, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.wrappModal {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+.wrappModal img {
+  width: 100%;
+}
+.wrappModal p {
+  width: 100%;
+  font-family: "akrobat";
+  padding: 10px 0;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 1.8rem;
+}
+
+.closeModal svg {
+  width: 1.5vw;
+  min-width: 15px;
+}
+.closeModal svg path {
+  transition: all ease-in-out 0.3s;
+  color: #ffffff;
+}
+.closeModal:hover svg path {
+  transition: all ease-in-out 0.3s;
+  color: #00a8ac;
+}
+
+.showModalWrapp {
+  opacity: 1;
+  z-index: 999;
+  transition: all ease-in-out 0.3s;
+}
+
+.showModal {
+  opacity: 1;
+  z-index: 1000;
+  transition: all ease-in-out 0.3s;
+}
+
+.slick-next,
+.slick-prev {
+  transition: all ease-in-out 0.3s;
+  opacity: 1;
+}
+.slick-next:hover,
+.slick-prev:hover {
+  opacity: 0.5;
+}
+.slick-next::before,
+.slick-prev::before {
+  content: "";
+  background-size: 100%;
+  transition: all ease-in-out 0.3s;
+  background-repeat: no-repeat;
+  background-image: url("../images/arrow-next.svg");
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+.slick-prev::before {
+  background-image: url("../images/arrow-prev.svg");
+}
+
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled {
+  transition: all ease-in-out 0.3s;
+  opacity: 0;
+  display: none;
+}
+
+.leyenda {
+  font-family: "akrobat";
+}
+
+/*# sourceMappingURL=config.css.map */
