@@ -225,7 +225,6 @@
   display: none; 
 }
 
-<<<<<<< HEAD
 .espacios{
   position: relative ;
   height: 95vh;
@@ -243,6 +242,37 @@
   }
 }
  
-=======
+.live {
+  &-box {
+    &__names {
+      display: flex;
+      padding: 0px 0;
+      font-size: 18px;
+      font-weight: normal;
+      margin-bottom: 3px;
+      border: 1px solid $second-jade;
+      &-name {
+        text-align: center;
+        flex: 1;
+        font-weight: 600;
+        font-size: 20px;
+        display: block;
+        padding: .6em .5em;
+        h1 {
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+  &-info {
+    height: 500px;
+    border: 1px solid rgba(#000000, .05);
+    &__content {
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+    }
+  }
+}
 
->>>>>>> 3bd11ff0babbff22208908e9cf536e91dccd4ffe
