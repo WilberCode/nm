@@ -202,3 +202,21 @@
 .leyenda {
   font-family: $akrobat;
 }
+
+.espacios{
+  position: relative ;
+  height: 95vh;
+  &-imgwrap{
+    & img{ 
+      height: 95vh !important;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+  &-description{
+     position: absolute;
+     bottom: 2.5em;
+     z-index: 7;
+  }
+}
+ 
