@@ -13,8 +13,14 @@
 .services-list li p{
   @apply font-bold;
   color:var(--first-steelblue-black); 
-  font-size: 18px;
+  font-size: 15px;
 } 
+
+@screen sm{
+  .services-list li p{ 
+    font-size: 18px;
+  } 
+}
 .services-squard{
   @apply py-3 px-4 font-bold text-xl text-center;
   letter-spacing:1.5px;

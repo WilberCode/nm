@@ -6,7 +6,8 @@
   "scripts": {
     "build:css": "postcss src/css/main.css -o ./dist/style.css",
     "watch": "watch \"npm run build:css\" ./src",
-    "scss": "sass scss/style.scss dist/config.css --watch"
+    "scss": "sass scss/style.scss dist/config.css --watch",
+    "build":"npx tailwind build src/css/main.css -o ./dist/style.css"
   },
   "keywords": [],
   "author": "",

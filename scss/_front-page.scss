@@ -99,11 +99,16 @@
   }
   &-gallery{  
     @at-root {
-      
+      .slick-dots li button:before{
+        font-size: 25px;
+      }
     }
     .slick-slide {
       height: 13.2em; 
       padding: .3em;
+      @media (max-width:400px) {
+        padding: 0em;
+      }
       @media (max-width:1025px) {
          height: 18em; 
         img {
@@ -266,13 +271,36 @@
     }
   }
   &-info {
-    height: 500px;
+    height: 680px;
+
     border: 1px solid rgba(#000000, .05);
     &__content {
       width: 100%;
       height: 100%;
       overflow-y: scroll;
     }
+    &__squard{
+      margin-bottom: 1px;
+      &-plane{
+        cursor: zoom-in;
+      }
+      &-btn{
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+  &-modal-wrap{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($first-steelblue-black, .8);
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
   }
 }
+
 

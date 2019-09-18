@@ -26,6 +26,7 @@ $(document).ready(function () {
   // AOS.init();
 });
 
+// Gallery modal
 showModal = (element) =>{
   let img = element.getElementsByTagName('img')[0].src;
   let caption = element.getElementsByTagName('img')[0].dataset.caption;
@@ -39,6 +40,21 @@ showModal = (element) =>{
 closeModal = () => {
   document.getElementsByClassName('wrappModal')[0].classList.remove('showModal');
   document.getElementsByClassName('overflow')[0].classList.remove('showModalWrapp');
+}
+
+// Plano Modal
+showModalPlano = (element) =>{
+  let img = element.getElementsByTagName('img')[0].src;
+  let caption = element.getElementsByTagName('img')[0].dataset.caption;
+  document.getElementById('image_modal_plano').innerHTML = '<img src="'+img+'">'; 
+
+  document.getElementsByClassName('live-modal-wrap')[0].classList.add('show-modal-plano');
+  document.getElementsByClassName('overflow_plano')[0].classList.add('show-modal-wrapp');
+}
+
+closeModalPlano = () => {
+  document.getElementsByClassName('live-modal-wrap')[0].classList.remove('show-modal-plano');
+  document.getElementsByClassName('overflow_plano')[0].classList.remove('show-modal-wrapp');
 }
   
    
