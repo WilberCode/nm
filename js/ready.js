@@ -23,7 +23,7 @@ $(document).ready(function () {
     event.preventDefault();
     $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
   });
-  // AOS.init();
+  AOS.init();
 });
 
 // Gallery modal
@@ -44,16 +44,15 @@ closeModal = () => {
 
 // Plano Modal
 showModalPlano = (element) =>{
-  let img = element.getElementsByTagName('img')[0].src;
-  let caption = element.getElementsByTagName('img')[0].dataset.caption;
-  document.getElementById('image_modal_plano').innerHTML = '<img src="'+img+'">'; 
+  let img = element.getElementsByTagName('img')[0].src; 
+  document.getElementById('live-modal__img').innerHTML = '<img src="'+img+'">'; 
 
-  document.getElementsByClassName('live-modal-wrap')[0].classList.add('show-modal-plano');
+  document.getElementById('live-modal-wrap').classList.add('live-modal-wrap-active');
   document.getElementsByClassName('overflow_plano')[0].classList.add('show-modal-wrapp');
 }
 
 closeModalPlano = () => {
-  document.getElementsByClassName('live-modal-wrap')[0].classList.remove('show-modal-plano');
+  document.getElementById('live-modal-wrap').classList.remove('live-modal-wrap-active');
   document.getElementsByClassName('overflow_plano')[0].classList.remove('show-modal-wrapp');
 }
   

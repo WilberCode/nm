@@ -11436,12 +11436,12 @@ video {
 .menu__link{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 700;
   padding-left: 0;
   padding-right: 0;
   display: block;
-  border-right-width: 1px;
+  border-right-width: 2px;
   color:var(--first-steelblue-medium);
   border-color:currentColor;
 }
@@ -11479,98 +11479,78 @@ video {
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  border-radius: 0.25rem;
   font-size: 0.875rem;
   font-weight: 600;
   vertical-align: bottom;
 }
 
-.btn-blue{
-  background-color: #4299e1;
+.btn-send{
   color: #fff;
+  font-size: 1.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-weight: 400;
 }
 
-.btn-delete{
-  background-color: #f56565;
-  color: #fff;
-}
-
-.btn-edit{
-  background-color: #d69e2e;
-  color: #fff;
-}
-
-.btn-blue:hover{
-  background-color: #3182ce;
-}
-
-.message{
-  display: flex;
-  align-items: center;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  overflow: hidden;
-  border-radius: 0.25rem;
-  width: 100%;
-  margin-bottom: 0.5rem;
-  margin-top: 1.5rem;
-}
-
-.message-icon{
-  width: 2.5rem;
-  text-align: center;
-  display: block;
-  color: #fff;
+.btn-download{
+  background-color: #fff;
+  font-size: 1.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border: 2px solid var(--second-jade);
+  color: var(--second-jade)!important;
+  letter-spacing: 1.5px;
 }
 
-.message-text{
-  padding-left: 1.25rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  color: #4a5568;
-  display: block;
+.form-group label {
+  color: #fff;
+  font-size: 1.125rem;
 }
 
-table tr th{
+.form-group input {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  background-color: #4299e1;
-  color: #fff;
-  border-right-width: 1px;
-  border-color: #63b3ed;
-}
-
-table tr td{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  background-color: #f7fafc;
-  color: #718096;
-}
-
-table tr th, table tr td{
-  text-align: center;
-}
-
-.input{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  border-radius: 0.25rem;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   outline: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   color: #4a5568;
-  width: 100%
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.institutions p {
+  font-size: 1.125rem;
+}
+
+.footer-legal a{
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .footer-legal a {
+    font-size: 1.125rem;
+    text-align: left;
+  }
+}
+
+.footer-legal p{
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-legal p {
+    text-align: left;
+  }
 }
 
 @media (min-width: 640px) {
@@ -54788,3 +54768,11 @@ table tr th, table tr td{
     z-index: auto;
   }
 }
+
+
+
+
+ 
+
+
+
