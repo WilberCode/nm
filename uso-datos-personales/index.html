@@ -4,70 +4,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="../dist/css/slick.css" />
+  <link rel="stylesheet" href="../dist/owl/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../dist/owl/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="../dist/owl/assets/owl.theme.green.min.css" />
+  <link rel="stylesheet" type="text/css" href="../dist/css/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="../dist/css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="../dist/css/aos.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
   <script type="text/javascript" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js?ver=5.0"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
     rel="stylesheet">
-  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+  
+  <link rel="stylesheet" href="../dist/css/tailwindcss.css" />
+  <link rel="stylesheet" href="../dist/css/style.css" />
+    <link rel="stylesheet" href="../dist/fonts/styles.css">
 
-  <link rel="stylesheet" href="../fonts/styles.css">
-  <link rel="stylesheet" href="../dist/style.css" />
-  <link rel="stylesheet" href="../dist/style-dist.css" />
-  <link rel="stylesheet" href="../dist/config.css" />
 
-  <title>NMespacios</title>
+  <title> USO DE DATOS PERSONALES - nm espacios</title>
 </head>
 
 <body>
   <div id="app" class="">
-    <header class="shadow  w-full h-auto  ">
-      <div id="header-wrap" class=" bg-white relative flex flex-wrap justify-between container h-105  lg:h-105">
-        <div class="logo">
-          <a href="/">
-            <img class="relative z-20 " src="../img/logonm.png" alt="" />
-          </a>
+      <header class="shadow  w-full h-auto  ">
+        <div id="header-wrap" class=" bg-white relative flex flex-wrap justify-between container h-105  lg:h-105">
+          <div class="logo">
+            <a href="http://adretail.pe/nmespacios/">
+              <img class="relative z-20 " src="../img/logonm.png" alt="" />
+            </a>
+          </div>
+          <div class="block lg:hidden mt-3 lg:mt-0 h-48">
+            <button id="nav-toggle" class=" nav-toggle flex h-30 items-center px-3 py-2   focus:outline-none  ">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:v="https://vecta.io/nano">
+                <path d="M491.318 235.318H20.682C9.26 235.318 0 244.577 0 256s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.26 20.682-20.682s-9.26-20.682-20.682-20.682zm0-156.878H20.682C9.26 78.44 0 87.7 0 99.12s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.26 20.682-20.682s-9.26-20.682-20.682-20.682zm0 313.757H20.682C9.26 392.197 0 401.456 0 412.88s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.26 20.682-20.682s-9.26-20.682-20.682-20.682z"
+                />
+              </svg>
+            </button>
+          </div>
+          <nav id="nav" class="nav z-20  absolute lg:relative w-full lg:w-auto lg:flex  justify-end lg:items-center hidden  h-auto lg:h-105 ">
+            <ul id="menu" class="menu w-full lg:flex  justify-end lg:items-center  lg:w-auto first-medium">
+              <li class="menu-item">
+                <a onclick="closeNav()" class="menu__link lg:px-4  lg:inline-block" href="/#ubicacion">UBICACIÓN</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu__link lg:px-4  lg:inline-block" href="/#contacto">CONTACTO</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu__link lg:px-4  lg:inline-block" href="/#departamentos">DEPARTAMENTOS</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu__link lg:px-4  lg:inline-block" href="/#transparencia">TRANSPARENCIA</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu__link lg:px-4  lg:inline-block" href="/#nosotros">NOSOTROS</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="block lg:hidden mt-3 lg:mt-0 h-48">
-          <button id="nav-toggle" class=" nav-toggle flex h-30 items-center px-3 py-2   focus:outline-none  ">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:v="https://vecta.io/nano">
-              <path d="M491.318 235.318H20.682C9.26 235.318 0 244.577 0 256s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.26 20.682-20.682s-9.26-20.682-20.682-20.682zm0-156.878H20.682C9.26 78.44 0 87.7 0 99.12s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.26 20.682-20.682s-9.26-20.682-20.682-20.682zm0 313.757H20.682C9.26 392.197 0 401.456 0 412.88s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.26 20.682-20.682s-9.26-20.682-20.682-20.682z"
-              />
-            </svg>
-          </button>
-        </div>
-        <nav id="nav" class="nav z-20  absolute lg:relative w-full lg:w-auto lg:flex  justify-end lg:items-center hidden  h-auto lg:h-105 ">
-          <ul class="menu w-full lg:flex  justify-end lg:items-center  lg:w-auto first-medium">
-            <li class="menu-item">
-              <a class="menu__link lg:px-4  lg:inline-block" href="/#">UBICACIÓN</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu__link lg:px-4  lg:inline-block" href="/#buttons">CONTACTO</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu__link lg:px-4  lg:inline-block" href="/#forms">DEPARTAMENTOS</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu__link lg:px-4  lg:inline-block" href="/#grids">TRANSPARENCIA</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu__link lg:px-4  lg:inline-block" href="/#crud">NOSOTROS</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      </header>
     <div class="w-full encabezado relative z-10 flex justify-end parallax-window  py-6" data-parallax="scroll" data-image-src="../img/bg-encabezado.jpg">
-      <div class="encabezado-content w-full md:max-w-lg  text-center md:text-left py-1 px-5 ">
-        <div class="flex items-center">
-          <div class="mr-2">
-            <h2 class="akrobat font-bold text-base md:text-4xl mb-0 text-left">EDIFICIO</h2>
-            <h3 class="akrobat font-regular  text-sm md:text-xl mt-0">MULTIFAMILIAR</h3>
-          </div>
-          <div>
-            <h1 class="text-4xl sm:text-5xl md:text-6xl">RUTTE
-              <span>1</span>
-            </h1>
-          </div>
+      <div class="encabezado-content w-full md:max-w-lg  text-center md:text-left py-5 px-6 ">
+        <div>
+          <img class="h-20 sm:h-40   " src="../img/encabezado-text.png" alt="">
         </div>
       </div>
     </div>
@@ -102,8 +103,8 @@
 
         <p class="text-lg mt-6" > <strong>D.</strong> Declaro conocer que podré revocar mi consentimiento y ejercer mis derechos previstos en la Constitución Política Perú,
         en la Ley y en el Reglamento, especialmente los derechos de acceso, rectificación, cancelación y oposición al tratamiento
-        de mis datos personales (derechos “ARCO”), los cuales podré ejercer dirigiéndome al correo electrónico: asesor1@nuevomundoespacios.
-        com.pe (Banco de Datos “Prospecto de Clientes”) o gvelarde@nuevomundoespacios.com.pe (Banco de Datos “Clientes”) (asunto
+        de mis datos personales (derechos “ARCO”), los cuales podré ejercer dirigiéndome al correo electrónico: <a class="text-blue-500" href="mailto:asesor1@nuevomundoespacios">asesor1@nuevomundoespacios</a> .
+        com.pe (Banco de Datos “Prospecto de Clientes”) o <a class="text-blue-500" href="gvelarde@nuevomundoespacios.com.pe">gvelarde@nuevomundoespacios.com.pe </a> (Banco de Datos “Clientes”) (asunto
         “Protección de Datos Personales”) o a las oficinas de <strong>NUEVO MUNDO ESPACIOS</strong> ubicadas en Calle Francisco Del Castillo Nº 292,
         Miraflores, Lima.</p>
          
@@ -170,12 +171,14 @@
     </footer>
 
   </div>
-  <script src="../js/jquery-3.3.1.min.js"></script>
-  <script src="../js/parallax.min.js"></script>
-  <script src="../js/slick.js"></script>
-  <script src="../js/ready.js"></script>
-  <script src="../src/owl/owl.carousel.min.js"></script>
+  <script src="../dist/js/jquery-3.3.1.min.js"></script>
+  <script src="../dist/js/parallax.min.js"></script>
+  <script src="../dist/js/slick.js"></script>
+  <script src="../dist/js/ready.js"></script>
+  <script src="../dist/owl/owl.carousel.min.js"></script>
+  <script src="../dist/js/aos.js"></script>
   <script src="../dist/js/app.js"></script>
+
 
 
   <script>

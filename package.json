@@ -4,10 +4,10 @@
   "description": "Proyecto CRUD | Mysql - vue - axios - php",
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss src/css/main.css -o ./dist/style.css",
+    "build:css": "postcss src/css/tailwind.css -o ./dist/css/tailwindcss.css",
     "watch": "watch \"npm run build:css\" ./src",
-    "scss": "sass scss/style.scss dist/config.css --watch",
-    "build":"npx tailwind build src/css/main.css -o ./dist/style.css"
+    "scss": "sass scss/style.scss dist/css/tailwindcss.css --watch",
+    "build":"npx tailwind build src/css/tailwind.css -o ./dist/css/tailwindcss.css"
   },
   "keywords": [],
   "author": "",

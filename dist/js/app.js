@@ -1,8 +1,1 @@
-(function(d){
-    let navToggle = d.getElementById('nav-toggle')
-    let nav = d.getElementById('nav')
-    navToggle.addEventListener('click',()=>{
-        nav.classList.toggle('hidden')
-        d.getElementById('header-wrap').classList.toggle('h-auto')
-    })
-})(document)
+"use strict";!function(s){var e=s.getElementById("nav-toggle"),a=s.getElementById("nav");e.addEventListener("click",function(){a.classList.toggle("hidden"),s.getElementById("header-wrap").classList.toggle("h-auto")}),showModal=function(e){var a=e.getElementsByTagName("img")[0].src,l=e.getElementsByTagName("img")[0].dataset.caption;s.getElementById("imageModal").innerHTML='<img src="'+a+'">',s.getElementById("captionModal").innerHTML="<p>"+l+"</p>",s.getElementsByClassName("wrappModal")[0].classList.add("showModal"),s.getElementsByClassName("overflow")[0].classList.add("showModalWrapp")},closeModal=function(){s.getElementsByClassName("wrappModal")[0].classList.remove("showModal"),s.getElementsByClassName("overflow")[0].classList.remove("showModalWrapp")},showModalPlano=function(e){var a=e.getElementsByTagName("img")[0].src;s.getElementById("live-modal__img").innerHTML='<img src="'+a+'">',s.getElementById("live-modal-wrap").classList.add("live-modal-wrap-active"),s.getElementsByClassName("overflow_plano")[0].classList.add("show-modal-wrapp")},closeModalPlano=function(){s.getElementById("live-modal-wrap").classList.remove("live-modal-wrap-active"),s.getElementsByClassName("overflow_plano")[0].classList.remove("show-modal-wrapp")}}(document);
