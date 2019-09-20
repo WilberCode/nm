@@ -1,0 +1,152 @@
+.header{
+  @media (max-width:$lg) {
+     &::before {
+       content: '';
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       height: 105px;
+       background: #fff;
+       z-index: 41;
+     }
+
+  } 
+ 
+  & .logo{ 
+    img{
+      width: 151px;
+      height: 201px;
+      @media (max-width:$lg) {
+        width: 80px;
+        height: auto;
+      }
+  
+      @media (max-width:600px) {
+        width: 80px;
+        height: auto; 
+      }
+        @media (max-width:200px) {
+         width: 50px;
+         height: auto;
+  
+        }
+  
+    }  
+      &-footer {
+        width: 200px;
+      } 
+  
+    
+  }
+  & .nav{ 
+    /* Icon Toogle*/ 
+    @media (max-width:$lg) { 
+      top: 105px;
+      left: 0;
+      padding: 1.8em;
+      background: rgba($first-steelblue-black, .95);
+      transform: translateY(-32em); 
+      transition: all .6s cubic-bezier(0, 0.88, 1, 1) ;
+      opacity: 0;
+      &-active{
+         transform: translateY(0); 
+         opacity: 1;
+       }
+     }
+     @media (max-width:300px) {
+      padding: 1em;
+    }  
+    &-toggle{
+      width: 40px;
+      height: 26px;
+      position: relative; 
+      transform: rotate(0deg); 
+      transition: .5s ease-in-out;
+      z-index: 8;
+      cursor: pointer;
+      background: $second-jade;
+      box-shadow: 0 0 0 6px $second-jade;
+      span {
+        display: block;
+        position: absolute;
+        height: 5px;
+        width: 50%;
+        background:  #fff;
+        opacity: 1; 
+        transform: rotate(0deg); 
+        transition: .25s ease-in-out;
+        &:nth-child(even) {
+          left: 50%; 
+        }
+        &:nth-child(odd) {
+          left:0px; 
+        }
+        &:nth-child(1), &:nth-child(2) {
+          top: 0px;
+        }
+        &:nth-child(3), &:nth-child(4) {
+          top: 10px;
+        }
+        &:nth-child(5), &:nth-child(6) {
+          top: 20px;
+        } 
+      }
+      &.nav-toggle-active{
+        span{
+          &:nth-child(1),&:nth-child(6) { 
+            transform: rotate(45deg);
+          }  
+          &:nth-child(2),&:nth-child(5) { 
+            transform: rotate(-45deg);
+          } 
+          &:nth-child(1) {
+            left: 5px;
+            top: 7px;
+          }
+          &:nth-child(2) {
+            left: calc(50% - 5px);
+            top: 7px;
+          }
+          &:nth-child(3) {
+            left: -50%;
+            opacity: 0;
+          }
+          &:nth-child(4) {
+            left: 100%;
+            opacity: 0;
+          }
+          &:nth-child(5) {
+            left: 5px;
+            top: 16px;
+          } 
+          &:nth-child(6) {
+            left: calc(50% - 5px);
+            top: 16px;
+          }
+        }
+      }
+     }   
+    .menu{
+      &-item:last-child  a{ 
+        border-right-color: transparent; 
+      }
+      &__link{
+        @media (max-width:$lg) {
+          border: none;
+          transition: padding .5s cubic-bezier(0.56, 2.14, 1, 1);
+          color: #fff;
+          &:hover{
+            border-color: initial;
+            border-left: 4px solid currentColor;
+            padding-left: 1em;
+            background: rgba(#000000, .05);
+        }
+      } 
+      }
+    }
+    
+  }
+ }
+
+ 

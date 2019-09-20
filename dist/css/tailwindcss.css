@@ -11442,7 +11442,7 @@ video {
   padding-right: 0;
   display: block;
   border-right-width: 2px;
-  color:var(--first-steelblue-medium);
+  color:var(--first-steelblue-dark);
   border-color:currentColor;
 }
 

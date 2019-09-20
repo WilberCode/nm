@@ -4,7 +4,7 @@
 
 .menu__link{  
   @apply py-1 text-base font-bold px-0 block border-r-2;
-  color:var(--first-steelblue-medium);
+  color:var(--first-steelblue-dark);
   border-color:currentColor; 
 }
 .services-list li {

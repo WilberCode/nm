@@ -1,78 +1,16 @@
- 
-.logo{
-  img{
-    width: 151px;
-    height: 201px;
-    @media (max-width:$md) {
-      width: 80px;
-      height: auto;
-    }
-
-    @media (max-width:600px) {
-      width: 80px;
-      height: auto; 
-    }
-      @media (max-width:200px) {
-       width: 50px;
-       height: auto;
-
-      }
-
-  }
+html {
+  scroll-behavior: smooth;
 }
-.menu{
-  &-item:last-child  a{ 
-    border-right-color: transparent; 
-  }
-  &__link{
-    @media (max-width:1023px) {
-      border: none;
-      transition: padding .5s cubic-bezier(0.56, 2.14, 1, 1);
-      &:hover{
-        border-color: initial;
-        border-left: 4px solid currentColor;
-        padding-left: 1em;
-        background: rgba(#000000, .05);
-    }
-   } 
-  }
+body{
+  overflow-x: hidden;
 }
 
-
- @media (max-width:$lg) {
-   .nav--close {
-      display: none;
-   } 
- }
-
-.nav{
-  &-toggle{
-    background: $second-jade; 
-    svg{ 
-      fill: white;
-      width: 24px;
-      height: 15px;
-    }
-    &:focus{
-      box-shadow: 0 0 0 3px rgba($second-jade, 0.70);
-    }
-  }
-  @media (max-width:1023px) {
-     top: 201px;
-     left: 0;
-     padding: 1.8em;
-     background: #f7fafc;
-  }
-  @media (max-width:600px) {
-    top: 105px; 
-  }
-}
 .encabezado-home{
    position: relative;
    z-index: 1;
   
    h1 {
-     background-color: rgba($first-steelblue-medium, .95);
+     background-color: rgba($first-steelblue-dark, .95);
      font-size: 2.2rem;
      color: #ffffff;
      font-family: $akrobat;
@@ -287,7 +225,7 @@
     background-size: 100%;
     transition: all ease-in-out .3s;
     background-repeat: no-repeat;
-    background-image: url('../img/svg/arrow-next.svg');
+    background-image: url('../../img/svg/arrow-next.svg');
     width: 100%;
     height: 100%;
     left: 0;
@@ -298,7 +236,7 @@
 }
 .slick-prev {
   &::before {
-    background-image: url('../img/svg/arrow-prev.svg'); 
+    background-image: url('../../img/svg/arrow-prev.svg'); 
   }
 }
 .slick-prev.slick-disabled,
@@ -341,29 +279,24 @@
 }
  
 .live {
-   @media (max-width:1137px) {
-
+   @media (max-width:1137px) { 
      overflow-x: auto; 
    }
-
+ 
   &-wrap{
     width: 1137px !important;    
   }
   &-box { 
 
-    &__names {
-      display: flex;
+    &__names { 
       padding: 0px 0;
       font-size: 18px;
-      font-weight: normal;
-      margin-bottom: 3px;
+      font-weight: normal; 
       border: 1px solid $second-jade;
       &-name {
-        text-align: center;
-        flex: 1;
+        text-align: center; 
         font-weight: 600;
-        font-size: 20px;
-        display: block;
+        font-size: 20px; 
         padding: .6em .5em;
         h1 {
           padding: 0;
@@ -378,13 +311,32 @@
     border: 1px solid rgba(#000000, .05);
     &__content { 
       height: 100%; 
-      overflow-y: scroll;  
+      overflow-y: scroll; 
 
     }
     &__squard{
       margin-bottom: 1px;
+      @media (max-width:$md) { 
+        p{
+          font-size: 14px;
+        }
+      }
+
       &-plane{
         cursor: zoom-in;
+        @media (max-width:$md) { 
+             &-img{ 
+                 height: 70px; 
+
+             }
+             button{
+               img{
+                 height: 20px;
+
+               }
+
+             }
+        } 
       }
       &-btn{
         margin-top: 10px;
@@ -411,8 +363,13 @@
 
     &__img{
       img{ 
-        width: 100%;
+
         width: 300px;
+         @media (max-width:$md) { 
+           width:auto;
+           height: 200px;
+         }
+
       }
     }
     &__close{
