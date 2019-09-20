@@ -29,42 +29,34 @@
 
 <body>
   <div id="app" class="">
-      <header class="shadow  w-full h-auto  ">
-        <div id="header-wrap" class=" bg-white relative flex flex-wrap justify-between container h-105  lg:h-105">
-          <div class="logo">
-            <a href="/">
-              <img class="relative z-20 " src="../img/logonm.png" alt="" />
-            </a>
-          </div>
-          <div class="block lg:hidden mt-3 lg:mt-0 h-48">
-            <button id="nav-toggle" class=" nav-toggle flex h-30 items-center px-3 py-2   focus:outline-none  ">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:v="https://vecta.io/nano">
-                <path d="M491.318 235.318H20.682C9.26 235.318 0 244.577 0 256s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.26 20.682-20.682s-9.26-20.682-20.682-20.682zm0-156.878H20.682C9.26 78.44 0 87.7 0 99.12s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.26 20.682-20.682s-9.26-20.682-20.682-20.682zm0 313.757H20.682C9.26 392.197 0 401.456 0 412.88s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.26 20.682-20.682s-9.26-20.682-20.682-20.682z"
-                />
-              </svg>
-            </button>
-          </div>
-          <nav id="nav" class="nav z-20  absolute lg:relative w-full lg:w-auto lg:flex  justify-end lg:items-center hidden  h-auto lg:h-105 ">
-            <ul id="menu" class="menu w-full lg:flex  justify-end lg:items-center  lg:w-auto first-medium">
-              <li class="menu-item">
-                <a onclick="closeNav()" class="menu__link lg:px-4  lg:inline-block" href="/#ubicacion">UBICACIÓN</a>
-              </li>
-              <li class="menu-item">
-                <a class="menu__link lg:px-4  lg:inline-block" href="/#contacto">CONTACTO</a>
-              </li>
-              <li class="menu-item">
-                <a class="menu__link lg:px-4  lg:inline-block" href="/#departamentos">DEPARTAMENTOS</a>
-              </li>
-              <li class="menu-item">
-                <a class="menu__link lg:px-4  lg:inline-block" href="/#transparencia">TRANSPARENCIA</a>
-              </li>
-              <li class="menu-item">
-                <a class="menu__link lg:px-4  lg:inline-block" href="/#nosotros">NOSOTROS</a>
-              </li>
-            </ul>
-          </nav>
+    <header class="header shadow w-full h-auto  ">
+      <div id="header-wrap" class=" bg-white relative flex flex-wrap justify-between container h-105  lg:h-105">
+        <div class="logo relative z-50">
+           <a href="/">
+            <img src="../img/logonm.png" alt="" />
+          </a>
         </div>
-      </header>
+        <div class="block lg:hidden mt-4 lg:mt-0 h-48 relative z-50">
+          <button  id="nav-toggle" class="nav-toggle focus:outline-none">  
+              <span ></span> 
+              <span ></span> 
+              <span ></span> 
+              <span ></span> 
+              <span ></span> 
+              <span ></span>  
+          </button>
+        </div>
+        <nav id="nav" class="nav z-40  absolute lg:relative w-full lg:w-auto lg:flex  justify-end lg:items-center   h-auto lg:h-105 ">
+          <ul id="menu" class="menu w-full lg:flex  justify-end lg:items-center  lg:w-auto first-medium">
+            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="/#ubicacion">UBICACIÓN</a></li> 
+            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="/#contacto">CONTACTO</a></li>
+            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="/#departamentos">DEPARTAMENTOS</a></li>
+            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="/#transparencia">TRANSPARENCIA</a></li>
+            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="/#nosotros">NOSOTROS</a></li>
+          </ul>
+        </nav>
+      </div> 
+    </header> 
       <div class="w-full encabezado relative z-10 flex justify-end parallax-window  py-6" data-parallax="scroll" data-image-src="../img/bg-encabezado.jpg">
         <div class="encabezado-content w-full md:max-w-lg  text-center md:text-left py-5 px-6 ">
           <div>

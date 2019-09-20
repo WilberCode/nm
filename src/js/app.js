@@ -7,15 +7,15 @@
 
 
     navToggle.addEventListener('click', () => {
-        nav.classList.toggle('hidden')
-        d.getElementById('header-wrap').classList.toggle('h-auto')
+      navToggle.classList.toggle('nav-toggle-active') 
+      nav.classList.toggle('nav-active') 
     }) 
 
-   function closeNav(){
-       nav.classList.add('nav--close')
-   }
-
-
+    let menu =   d.getElementById('menu')
+    menu.addEventListener('click',(e)=>{ 
+          nav.classList.toggle('nav-active') 
+          navToggle.classList.toggle('nav-toggle-active') 
+    }) 
     showModal = (element) => {
         let img = element.getElementsByTagName('img')[0].src;
         let caption = element.getElementsByTagName('img')[0].dataset.caption;
