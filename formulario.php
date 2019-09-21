@@ -1804,30 +1804,31 @@
         <div class="contact-form-wrap flex flex-wrap">
           <div class="w-full md:w-1/2">
             <h1 class="akrobat text-white text-2xl">Ingresa tus datos y en breve te atenderemos</h1>
-            <form id="form" class="form mt-4 pr-0 lg:pr-30 ">
+          
+             <form action="<?=$_SERVER['PHP_SELF']?>" method="post" id="form" class="form mt-4 pr-0 lg:pr-30 ">
               <div class="form-group">
                 <label for="name">Nombres y apellidos</label>
-                <input type="text" class="name" id="name" required>
+                <input type="text" class="name" id="name" name="name" required>
               </div>
               <div class="flex flex-wrap mt-5"> 
                   <div class="form-group w-full  sm:w-2/3 pr-0 sm:pr-5">
                     <label for="email">E-mail</label>
-                    <input type="email" class="gmail" id="email" required>
+                    <input type="email" class="gmail" id="email" name="email" required>
                   </div>
                   <div class="form-group w-full  sm:w-1/3">
                     <label for="phone">Teléfono</label>
-                    <input type="number" class="phone" maxlength="9" id="phone" required>
+                    <input type="number" class="phone" name="phone" maxlength="9" id="phone" required>
                   </div>
               </div>
               <div class="form-group mt-5">
                 <label for="message">Mensaje</label>
-                <textarea class="w-full h-128 mt-2 p-2 " class="message" id="message" required></textarea>
+                <textarea class="w-full h-128 mt-2 p-2 " name="message" class="message" id="message" required></textarea>
               </div>
               <div class="mt-5 text-right ">
                 <button type="submit" class="btn btn-send bg-jade">ENVIAR</button>
               </div>
-            </form>
-             <div id="orm-message" class="form-message hidden">
+            </form> 
+              <div id="orm-message" class="form-message hidden">
                 <div class="flex mt-8 rounded overflow-hidden ">
                   <div class=" bg-green-500 p-4 flex items-center">
                     <i class=" text-white fas fa-check"></i>
@@ -1837,6 +1838,17 @@
                   </div>
                 </div>
              </div>
+            <?php 
+              $mensaje="Mensaje del formulario de contacto de nmespacios.com";
+              $mensaje.= "\nNombre y Apellidos: ". $_POST['name'];
+              $mensaje.= "\nEmail: ".$_POST['email'];
+              $mensaje.= "\nTelefono: ". $_POST['phone'];
+              $mensaje.= "\nMensaje: \n".$_POST['message'];
+              $destino= "wphfrontend@gmail.com";
+              $remitente = $_POST['email'];
+              $asunto = "Mensaje enviado por: ".$_POST['name'];
+              mail($destino,$asunto,$mensaje,"FROM: $remitente");
+            ?>  
           </div>
           <div class="w-full md:w-1/2">
             <div class="pl-0 md:pl-10 lg:pl-20" >

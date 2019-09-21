@@ -44,6 +44,19 @@
         d.getElementById('live-modal-wrap').classList.remove('live-modal-wrap-active');
         d.getElementsByClassName('overflow_plano')[0].classList.remove('show-modal-wrapp');
     } 
+ 
+
+    let formMessage = d.getElementById('form-message')
+    let form = d.getElementById('form') 
+    $("form").submit(function (event) {
+        if ($("input").first().val() === "") {  
+            return;
+        } 
+        // event.preventDefault(); 
+        $(".form-message").show().fadeOut(6000);    
+    });
+ 
+
 
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
@@ -74,8 +87,4 @@
             }
         });
 })(document);
-
-
-
-
 
