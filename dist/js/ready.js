@@ -26,46 +26,4 @@ $(document).ready(function () {
   AOS.init();
 });
 
-// Gallery modal
-showModal = (element) =>{
-  let img = element.getElementsByTagName('img')[0].src;
-  let caption = element.getElementsByTagName('img')[0].dataset.caption;
-  document.getElementById('imageModal').innerHTML = '<img src="'+img+'">';
-  document.getElementById('captionModal').innerHTML = '<p>'+caption+'</p>';
-
-  document.getElementsByClassName('wrappModal')[0].classList.add('showModal');
-  document.getElementsByClassName('overflow')[0].classList.add('showModalWrapp');
-}
-
-closeModal = () => {
-  document.getElementsByClassName('wrappModal')[0].classList.remove('showModal');
-  document.getElementsByClassName('overflow')[0].classList.remove('showModalWrapp');
-}
-
-// Plano Modal
-showModalPlano = (element) =>{
-  let img = element.getElementsByTagName('img')[0].src; 
-  document.getElementById('live-modal__img').innerHTML = '<img src="'+img+'">'; 
-
-  document.getElementById('live-modal-wrap').classList.add('live-modal-wrap-active');
-  document.getElementsByClassName('overflow_plano')[0].classList.add('show-modal-wrapp');
-}
-
-closeModalPlano = () => {
-  document.getElementById('live-modal-wrap').classList.remove('live-modal-wrap-active');
-  document.getElementsByClassName('overflow_plano')[0].classList.remove('show-modal-wrapp');
-}
-  
-   
  
-// function imprim1(where) {
-//     var printContents = document.getElementById('where').innerHTML;
-//     w = window.open();
-//     w.document.write(printContents);
-//     w.document.close(); // necessary for IE >= 10
-//     w.focus(); // necessary for IE >= 10
-//     w.print();
-//     w.close();
-//     return true;
-//   } 
-

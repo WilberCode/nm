@@ -31,16 +31,16 @@
     <link rel="stylesheet" href="dist/owl/assets/owl.carousel.min.css" /> 
     <link rel="stylesheet" href="dist/owl/assets/owl.theme.default.min.css" /> 
     <link rel="stylesheet" href="dist/owl/assets/owl.theme.green.min.css" /> 
-    <link rel="stylesheet" type="text/css" href="dist/css/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="dist/css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="dist/css/aos.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="dist/css/slick.css" /> 
+    <link rel="stylesheet" type="text/css" href="dist/css/slick-theme.css" />  
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />  
+    <link rel="stylesheet" type="text/css" href="dist/css/aos.css" /> 
     <script type="text/javascript" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js?ver=5.0"></script> 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
     <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> --> 
-    <link rel="stylesheet" href="dist/css/tailwindcss.css" />
-    <link rel="stylesheet" href="dist/css/style.css" />
     <link rel="stylesheet" href="dist/fonts/styles.css"> 
+    <link rel="stylesheet" href="dist/css/tailwindcss-dist.css" />
+    <link rel="stylesheet" href="dist/css/style.css" />
     <title>nm espacios</title>
 
 
@@ -56,8 +56,8 @@
               <img src="img/logonm.png" alt="" />
             </a>
           </div>
-          <div class="block lg:hidden mt-4 lg:mt-0 h-48 relative z-50">
-            <button  id="nav-toggle" class="nav-toggle focus:outline-none">  
+          <div class="nav-toggle-wrap block lg:hidden mt-4 lg:mt-0 h-48 absolute z-50">
+            <button  id="nav-toggle" class="nav-toggle focus:outline-none border-none">  
                 <span ></span> 
                 <span ></span> 
                 <span ></span> 
@@ -93,114 +93,89 @@
                     <li><p>Ubicación privilegiada a un paso de San Isidro y cerca al parque Gonzales Prada.</p></li>
                   </ul>
                   <ul class="services-characteristics mt-12" data-aos="fade-up" data-aos-delay="700">
-                    <li> <img src="img/services/relacion.png" alt=""> <p>Acabados y diseño de excelente <br>
+                    <li> <img src="img/services/relacion.png" alt="relaciones"> <p>Acabados y diseño de excelente <br>
                         relación calidad > precio </p>
                     </li>
-                    <li> <img src="img/services/cocina.png" alt=""> <p>Cocina integrada o independiente
+                    <li> <img src="img/services/cocina.png" alt="cocina"> <p>Cocina integrada o independiente
                       </p>
                     </li>
-                    <li> <img src="img/services/estacionamiento.png" alt=""> <p>Estacionamientos y depósitos
+                    <li> <img src="img/services/estacionamiento.png" alt="estacionamiento"> <p>Estacionamientos y depósitos
                       </p>
                     </li>
-                    <li> <img src="img/services/seguridad.png" alt=""> <p>Seguridad integral en el
+                    <li> <img src="img/services/seguridad.png" alt="seguridad"> <p>Seguridad integral en el
                         edificio <br> y departamentos</p>
                     </li>
-                    <li> <img src="img/services/ascensor.png" alt=""> <p>02 ascensores
+                    <li> <img src="img/services/ascensor.png" alt="ascensor"> <p>02 ascensores
                       </p>
                     </li>
-                    <li> <img src="img/services/gas.png" alt=""> <p>Gas natural doméstico </p>
+                    <li> <img src="img/services/gas.png" alt="gas"> <p>Gas natural doméstico </p>
                     </li>
                   </ul>
               </div>
               <div class=" w-full md:w-3/5 pl-0 md:pl-10 mt-6 md:mt-0 " data-aos="flip-right"  data-aos-duration="800">
-                <img class="w-full " src="img/fachada.png" alt="">
+                <img class="w-full " src="img/fachada.png" alt="fachada">
               </div>
           </div> 
           <div class="container">
             <div class="max-w-3xl mx-auto block sm:flex flex-wrap justify-around md:justify-between mt-12 md:mt-6">
                 <div class="services-squard mb-4 xs:mb-10 w-full sm:max-w-xs md:max-w-14" data-aos="fade-up" data-aos-delay="100">
-                   <a class="block p-3" href="#galeria"> Galería fotos</a>
+                   <a class="block  p-2 sm:p-3" href="#gallery"> Galería fotos</a>
                 </div>
                 <div class="services-squard mb-4 xs:mb-10 w-full sm:max-w-xs md:max-w-14" data-aos="fade-up" data-aos-delay="200">
-                    <a class="block p-3" href="#departamentos"> Departamentos</a>
+                    <a class="block  p-2 sm:p-3" href="#departamentos"> Departamentos</a>
                 </div>
                 <div class="services-squard mb-4 xs:mb-10 w-full sm:max-w-xs md:max-w-14"  data-aos="fade-up" data-aos-delay="300">
-                    <a class="block p-3" href="#ubicacion">Ubicación</a>
+                    <a class="block  p-2 sm:p-3" href="#ubicacion">Ubicación</a>
                 </div>
             </div>
-          </div> 
-          <div class="container mt-4">
-              <div class="services-gallery" id="galeria" >
-                  <div class="slider w-full  flex justify-center">
-                    <div class="w-full md:w-1/3 spaceInAll_tiny  " onclick="showModal(this) " data-aos="fade-up" data-aos-delay="100">
-                      <img src="img/gallery/lobby.png" alt="lobby" class="w-full sm:w-3/4 md:w-3/4 lg:w-full mx-auto" data-caption="Lobby" />
-                    </div>
-                    <div class="w-full md:w-1/3 spaceInAll_tiny  " onclick="showModal(this)" data-aos="fade-up" data-aos-delay="200">
-                      <img src="img/gallery/area-comun.png" alt="area comun" class="w-full sm:w-3/4 md:w-3/4 lg:w-full mx-auto" data-caption="Sala lounge de uso común" />
-                    </div>
-                    <div class="w-full md:w-1/3 spaceInAll_tiny  " onclick="showModal(this)" data-aos="fade-up" data-aos-delay="300">
-                      <img src="img/gallery/cocina.png" alt="cocina" class="w-full sm:w-3/4 md:w-3/4 lg:w-full mx-auto " data-caption="Cocina: granito en encimeras de cocina, muebles de MDF, pisos de porcelanato."
-                      />
-                    </div>
-                    <div class="w-full md:w-1/3 spaceInAll_tiny  " onclick="showModal(this)">
-                      <img src="img/gallery/dormitorio-principal.png" alt="dormitorio" class="w-full sm:w-3/4 md:w-3/4 lg:w-full mx-auto" data-caption="Dormitorio principal con walk in closet y baño integrado."
-                      />
-                    </div>
-                    <div class="w-full md:w-1/3 spaceInAll_tiny  " onclick="showModal(this)">
-                      <img src="img/gallery/sala.png" alt="sala" class="w-full sm:w-3/4 md:w-3/4 lg:w-full mx-auto" data-caption="Sala" />
-                    </div>
-                    <div class="w-full md:w-1/3 spaceInAll_tiny  " onclick="showModal(this)">
-                      <img src="img/gallery/bano.png" alt="baño principal" class="w-full sm:w-3/4 md:w-3/4 lg:w-full mx-auto" data-caption="Baño principal. Acabados de calidad."
-                      />
-                    </div>
-                    <div class="w-full md:w-1/3 spaceInAll_tiny  " onclick="showModal(this)">
-                      <img src="img/gallery/dormitorio-secundario.png" alt="dormitorio secundario" class="w-full sm:w-3/4 md:w-3/4 lg:w-full mx-auto" data-caption="Dormitorio secundario."
-                      />
-                    </div>
-                  </div>
-                </div>
           </div>  
-      </div>
-      <div class="overflow" onclick="closeModal(this)"></div>
-      <div class="wrappModal flex justify-center items-center">
-        <div class=" ">
-          <a onclick="closeModal(this)" class="closeModal  flex justify-end">
-            <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 320 512">
-              <path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
-                class=""></path>
-            </svg>
-          </a>
-          <div id="imageModal" class="flex justify-center w-full"></div>
-          <div id="captionModal" class=" services-gallery__caption text-center text-xl font-bold"></div>
-        </div>
+          <div class="container mt-8 xs:mt-10"> 
+              <div class="gallery"  id="gallery"> 
+                  <img src="img/gallery/lobby.png" alt="lobby" class="" data-caption="Lobby" /> 
+                  <img src="img/gallery/area-comun.png" alt="area comun" class="" data-caption="Sala lounge de uso común" /> 
+                  <img src="img/gallery/cocina.png" alt="cocina" class=" " data-caption="Cocina: granito en encimeras de cocina, muebles de MDF, pisos de porcelanato."  /> 
+                  <img src="img/gallery/dormitorio-principal.png" alt="dormitorio" class="" data-caption="Dormitorio principal con walk in closet y baño integrado." />  
+                  <img src="img/gallery/sala.png" alt="sala" class="" data-caption="Sala" />  
+                  <img src="img/gallery/bano.png" alt="baño principal" class="" data-caption="Baño principal. Acabados de calidad."  />
+                  <img src="img/gallery/dormitorio-secundario.png" alt="dormitorio secundario" class="" data-caption="Dormitorio secundario." />
+                </div> 
+            </div>
+          </div>  
+      </div> 
+      <div id="gallery-modal-wrap" class="gallery-modal-wrap flex justify-center items-center">
+        <div class="gallery-modal text-right">
+          <button id="gallery-modal__btn" class="gallery-modal__btn  text-right">X</button>
+          <div id="gallery-modal-img" class="flex justify-center w-full"></div>
+          <div id="gallery-modal-caption" class="gallery-modal-caption text-center text-xl font-bold"></div>
+        </div>  
       </div> 
 
-      <div class="w-full espacios mt-16" id="departamentos">
-        <div class="owl-carousel owl-theme h-600 md:h-auto">
-          <div class="espacios-imgwrap">
-            <img src="img/slider/slider-1.png" class="w-full "/>
-          </div>
-          <div class="espacios-imgwrap">
-            <img src="img/slider/slider-2.png" class="w-full "/>
-          </div>
-          <div class="espacios-imgwrap">
-            <img src="img/slider/slider-3.png" class="w-full "/>
-          </div>
-  
+     <div class="w-full espacios mt-16 " id="departamentos">
+      <div class="owl-carousel owl-theme h-600 md:h-auto">
+        <div class="espacios-imgwrap">
+          <img src="img/slider/slider-1.png" class="block "/>
         </div>
-        <div class="espacios-description bg-white py-3 sm:py-10  w-full absolute ">
-          <div class="bg-black py-3 sm:py-5">
-            <div class="container block md:flex px-4 md:px-0">
-              <div class="w-full md:w-1/2"> <h1 class=" text-center md:text-left text-xl md:text-3xl font-semibold text-white" data-aos-offset="100" data-aos-duration="400" data-aos="fade-right">36 departamentos <br> de 1, 2 y 3 dormitorios </h1> </div>
-              <div class="w-full md:w-1/2 flex justify-center">
-                <img src="img/espacios/desde-hasta.svg" alt="desde hasta" class="w-2/3 md:w-full" data-aos="zoom-in" data-aos-delay="500"
-                  data-aos-duration="600" />
+        <div class="espacios-imgwrap">
+          <img src="img/slider/slider-2.png" class="block "/>
+        </div>
+        <div class="espacios-imgwrap">
+          <img src="img/slider/slider-3.png" class="block "/>
+        </div> 
+      </div>
+      <div class="espacios-description bg-white py-3 md:py-5 lg:py-10   w-full  ">
+        <div class="bg-black py-3 sm:py-5">
+          <div class="container block md:flex px-4 md:px-0">
+            <div class="w-full md:w-1/2"> <h1 class=" text-center md:text-left text-xl md:text-3xl font-semibold text-white leading-tight sm:leading-normal" data-aos-offset="100" data-aos-duration="400" data-aos="fade-right">36 departamentos <br> de 1, 2 y 3 dormitorios </h1> </div>
+            <div class="w-full md:w-1/2 flex justify-center items-center mt-2 sm:mt-0">
+              <div class="w-full espacios-description-img"   data-aos="zoom-in" data-aos-delay="500"
+              data-aos-duration="600"  >
+                <img src="img/espacios/desde-hasta.svg" alt="desde hasta"  />
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
    
       <div class="live relative z-10">
         <div class="container live-wrap mt-16">
@@ -225,34 +200,20 @@
             </div>
             <div class="live-info">
               <div class="live-info__content">   
-                <div class="overflow_plano" onclick="closeModalPlano(this)"></div>
-                <div id="live-modal-wrap" class="live-modal-wrap flex justify-center items-center relative px-4"> 
-                  <div class="w-full bg-white sm:w-2/3 lg:w-1/3 relative"> 
-                    <div  class="live-modal__img flex justify-center w-full "> 
-                      <div   class="" >
-                        <button onclick="closeModalPlano(this)" class="live-modal__close flex justify-end text-white absolute top-0 right-0">
-                          <svg class="w-30 h-30" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 320 512">
-                            <path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
-                              class=""></path>
-                          </svg>
-                        </button>
-                        <div id="live-modal__img" data-aos="zoom-in">
-                          
-                        </div>
-                      </div>
-                    </div>
-
-                   </div> 
-                </div>   
+                <div id="live-modal-wrap" class="live-modal-wrap flex justify-center items-center">
+                  <div class="live-modal text-right">
+                    <button id="live-modal__btn" class="live-modal__btn  text-right">X</button>
+                    <div id="live-modal-img" class="flex justify-center w-full bg-white"></div> 
+                  </div>
+                </div> 
               <!-- plano fila start 1 -->
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="" id="plano1">
+                <div       class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+<div class="live-info__squard-plane-img-wrap text-center " id="plano1">
+
                        <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/101.png" alt="">
                   </div>
-                  <button class="live-info__squard-btn absolute left-0 top-0 ">
-                    <img src="img/lupa.png" alt="">
+                  <button class="live-info__squard-btn absolute left-0 top-0 "> 
                   </button>
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -293,14 +254,13 @@
                <!-- plano fila end -->
               <!-- plano fila start 2 -->
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/103.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
-                        </button>  
+                    </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
                      <div class="">
@@ -339,13 +299,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 3 -->
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/201.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -382,13 +341,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 4 -->
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/202.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -425,13 +383,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 5 -->
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/203.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -468,13 +425,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 6 -->
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/204.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -511,13 +467,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 7 -->
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/205.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -554,13 +509,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 8 -->
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/206.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -597,13 +551,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 9 -->
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/301.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -640,13 +593,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 10 -->
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/302.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -683,13 +635,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 11  CORREGUIR --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/303.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -726,13 +677,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 12 CORREGUIR--> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/304.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -769,13 +719,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 13 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/305.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -812,13 +761,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 14 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/306.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -856,13 +804,12 @@
                 
               <!-- plano fila start 15 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/401.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -900,13 +847,12 @@
                 
               <!-- plano fila start 16 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/402.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -943,13 +889,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 17 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/403.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -986,13 +931,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 18 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/404.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1029,13 +973,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 19 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/405.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1072,13 +1015,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 20 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/406.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1116,13 +1058,12 @@
                 
               <!-- plano fila start 21 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/501.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1159,13 +1100,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 22 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/502.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1202,13 +1142,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 23 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/503.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1245,13 +1184,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 24 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/504.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1289,13 +1227,12 @@
                 
               <!-- plano fila start 25 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/505.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1332,13 +1269,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 26 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/506.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1375,13 +1311,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 27 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/601.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1418,13 +1353,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 28 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/602.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1463,13 +1397,12 @@
 
               <!-- plano fila start 29 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/603.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1508,13 +1441,12 @@
 
               <!-- plano fila start 30 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/604.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1551,13 +1483,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 31 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/605.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1594,13 +1525,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 32 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/606.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1637,13 +1567,12 @@
                <!-- plano fila end -->
               <!-- plano fila start 33 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/702.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1683,13 +1612,12 @@
                 
               <!-- plano fila start 34 --> 
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div onclick="showModalPlano(this)"   class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-                  <div class="">
+                <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center">
                     <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/703.png" alt="">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
-                            <img src="img/lupa.png" alt="">
                         </button>  
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
@@ -1802,10 +1730,9 @@
   <div class="contact bg-medium mt-16 py-10" id="contacto">
      <div class="container ">
         <div class="contact-form-wrap flex flex-wrap">
-          <div class="w-full md:w-1/2">
+           <div class="w-full md:w-1/2">
             <h1 class="akrobat text-white text-2xl">Ingresa tus datos y en breve te atenderemos</h1>
-          
-             <form action="<?=$_SERVER['PHP_SELF']?>" method="post" id="form" class="form mt-4 pr-0 lg:pr-30 ">
+            <form id="form" action="<?=$_SERVER['PHP_SELF']?>" method="post"  class="form mt-4 pr-0 lg:pr-30 ">
               <div class="form-group">
                 <label for="name">Nombres y apellidos</label>
                 <input type="text" class="name" id="name" name="name" required>
@@ -1815,20 +1742,20 @@
                     <label for="email">E-mail</label>
                     <input type="email" class="gmail" id="email" name="email" required>
                   </div>
-                  <div class="form-group w-full  sm:w-1/3">
+                  <div class="form-group w-full mt-5  sm:mt-0 sm:w-1/3">
                     <label for="phone">Teléfono</label>
-                    <input type="number" class="phone" name="phone" maxlength="9" id="phone" required>
+                    <input type="tel" class="phone" maxlength="9" id="phone" name="phone" required>
                   </div>
               </div>
               <div class="form-group mt-5">
                 <label for="message">Mensaje</label>
-                <textarea class="w-full h-128 mt-2 p-2 " name="message" class="message" id="message" required></textarea>
+                <textarea class="w-full h-128 mt-2 p-2 " class="message" id="message" name="message" required></textarea>
               </div>
-              <div class="mt-5 text-right ">
-                <button type="submit" class="btn btn-send bg-jade">ENVIAR</button>
+              <div class="mt-5  text-left sm:text-right ">
+                <button type="submit" class=" w-full sm:w-auto btn btn-send bg-jade">ENVIAR</button>
               </div>
-            </form> 
-              <div id="orm-message" class="form-message hidden">
+            </form>
+             <div id="orm-message" class="form-message hidden">
                 <div class="flex mt-8 rounded overflow-hidden ">
                   <div class=" bg-green-500 p-4 flex items-center">
                     <i class=" text-white fas fa-check"></i>
@@ -1838,7 +1765,7 @@
                   </div>
                 </div>
              </div>
-            <?php 
+             <?php 
               $mensaje="Mensaje del formulario de contacto de nmespacios.com";
               $mensaje.= "\nNombre y Apellidos: ". $_POST['name'];
               $mensaje.= "\nEmail: ".$_POST['email'];
@@ -1900,7 +1827,7 @@
               </div>
            </div>
           <div class="w-full xs:w-1/2 sm:w-1/2 md:w-1/3 px-1 mb-2 sm:mb-0 flex items-end" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
-            <div class=" p-2 sm:p-8 text-xs md:text-base text-dark ">
+            <div class=" p-2 sm:p-4 md:p-8 text-sm sm:text-xs md:text-base text-dark ">
               <p>
                 <strong>1.</strong> Centro Empresarial Miraflores - CEM I
                 <br>
@@ -1917,11 +1844,11 @@
       </div>
       <div class="projects-description mt-8 text-dark">
          <div>
-          <h1 class=" text-2xl md:text-4xl font-bold akrobat inline-block leading-tight">PROYECTOS DESTACADOS
-            <span class="text-2xl">Más de 160 mil mt2 construidos</span>
+          <h1 class=" text-xl sm:text-2xl md:text-4xl font-bold akrobat inline-block leading-tight">PROYECTOS DESTACADOS
+            <span class="text-lg md:text-2xl">Más de 160 mil mt2 construidos</span>
           </h1>
          </div>
-         <p class=" text-lg md:text-xl mt-5" >El Grupo Nuevo Mundo Inmobiliaria cuenta con la experiencia de más de 14 años en la construcción, gerencia de proyectos y
+         <p class=" text-base sm:text-lg md:text-xl mt-5" >El Grupo Nuevo Mundo Inmobiliaria cuenta con la experiencia de más de 14 años en la construcción, gerencia de proyectos y
         administración de centros empresariales y hoteles, lo que nos permite ofrecer hoy, departamentos con espacios que cubran
         las expectativas y exigencias del mercado.</p>
       </div>
@@ -1939,7 +1866,7 @@
               <img class="w-16  md:w-20 lg:w-32 xl:w-40 " src="img/logonm-footer.png" alt=""/>
             </a>
           </div>
-          <div class=" w-full md:w-2/3 footer-legal mt-10 md:mt-16">
+          <div class=" w-full md:w-2/3 footer-legal mt-10 md:mt-16" id="transparencia" >
             <p class="mb-3">
               <a href="http://adretail.pe/nmespacios/terminos-condiciones"> TÉRMINOS Y CONDICIONES </a>
             </p>
@@ -1967,31 +1894,72 @@
       </section>
     </footer>
     </div>  
-    <script src="dist/js/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/jquery-3.3.1.min.js"></script> 
     <script src="dist/js/parallax.min.js"></script>
-    <script src="dist/js/slick.js"></script>
+    <script src="dist/js/slick.js"></script>  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script src="dist/js/ready.js"></script>
+
     <script src="dist/owl/owl.carousel.min.js"></script>
     <script src="dist/js/aos.js"></script>
-    <script src="dist/js/app.js"></script> 
+    <script src="dist/js/app.js"></script>  
 
 
   <script>
     $('.owl-carousel').owlCarousel({
-      margin: 0,
+      margin:0,
       loop: true,
       items: 1,
       autoplay: true,
       autoplayTimeout: 4000,
-      autoplayHoverPause: true
+      autoplayHoverPause: true,  
+      dots:false
+       
+
     })
 
     AOS.init({  
       once: true, 
     });
-
-  </script>
-
   
+    $('.gallery').slick({
+      dots: false,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots:true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots:true
+
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  </script>
   </body>
 </html>

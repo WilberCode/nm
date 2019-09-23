@@ -13,6 +13,7 @@
     navToggle.addEventListener('click', () => {
       navToggle.classList.toggle('nav-toggle-active') 
       nav.classList.toggle('nav-active') 
+     
     })  
 
     let menu =   Id('menu')
@@ -23,17 +24,7 @@
 
     // Gallery Modal
     // const slider  =  Id('gallery')
-    const gallerModalWrap = Id('gallery-modal-wrap')
-    // slider.addEventListener('click',(e)=>{
-    //   let src = e.target.currentSrc
-    //   if(src !== undefined){
-    //     Id('gallery-modal-img').innerHTML = `<img src="${src}">`
-    //     Id('gallery-modal-caption').innerHTML = `<p>${ e.target.dataset.caption}</p>`
-    //     gallerModalWrap.classList.add('gallery-modal-show')
-    //   }else{
-    //     return;
-    //   }
-    // })
+    const gallerModalWrap = Id('gallery-modal-wrap') 
     Id('gallery-modal__btn').addEventListener('click',()=>{
       gallerModalWrap.classList.remove('gallery-modal-show')
     }) 
@@ -52,18 +43,35 @@
    
  
     // Plano Modal
-    showModalPlano = (element) => {
-        let img = element.getElementsByTagName('img')[0].src;
-        Id('live-modal__img').innerHTML = '<img src="' + img + '">';
+$(".live-info__squard-plane-img-wrap").click(function (e) { 
+    let src = e.target.currentSrc || e.target.children[0].src 
+          
+        if (src !== undefined ) {
+          Id('live-modal-img').innerHTML = `<img src="${src}">` 
+          Id('live-modal-wrap').classList.add('live-modal-show') 
+          document.rootElement.style.overflowX = "hidden" 
+        } else {
+          return;
+        }
+      });
+Id('live-modal__btn').addEventListener('click', () => {
+    Id('live-modal-wrap').classList.remove('live-modal-show')
+    }) 
 
-        Id('live-modal-wrap').classList.add('live-modal-wrap-active');
-        className('overflow_plano')[0].classList.add('show-modal-wrapp');
-    }
 
-    closeModalPlano = () => {
-        Id('live-modal-wrap').classList.remove('live-modal-wrap-active');
-        className('overflow_plano')[0].classList.remove('show-modal-wrapp');
-    } 
+    
+    // showModalPlano = (element) => {
+    //     let img = element.getElementsByTagName('img')[0].src;
+    //     Id('live-modal__img').innerHTML = '<img src="' + img + '">';
+
+    //     Id('live-modal-wrap').classList.add('live-modal-wrap-active');
+    //     className('overflow_plano')[0].classList.add('show-modal-wrapp');
+    // }
+
+    // closeModalPlano = () => {
+    //     Id('live-modal-wrap').classList.remove('live-modal-wrap-active');
+    //     className('overflow_plano')[0].classList.remove('show-modal-wrapp');
+    // } 
  
 
     let formMessage = Id('form-message')
