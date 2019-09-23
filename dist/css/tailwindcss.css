@@ -3845,6 +3845,14 @@ video {
   height: 256px;
 }
 
+.h-400 {
+  height: 400px;
+}
+
+.h-570 {
+  height: 570px;
+}
+
 .h-600 {
   height: 600px;
 }
@@ -11469,9 +11477,15 @@ video {
   padding-left: 1rem;
   padding-right: 1rem;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   text-align: center;
   letter-spacing:1.5px;
+}
+
+@media (min-width: 640px){
+  .services-squard{
+    font-size: 1.25rem;
+  }
 }
 
 .btn{
@@ -11512,8 +11526,8 @@ video {
 }
 
 .form-group input {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   outline: 0;
@@ -11523,6 +11537,15 @@ video {
   color: #4a5568;
   width: 100%;
   margin-top: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .form-group input {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .institutions p {
@@ -14766,6 +14789,14 @@ video {
 
   .sm\:h-256 {
     height: 256px;
+  }
+
+  .sm\:h-400 {
+    height: 400px;
+  }
+
+  .sm\:h-570 {
+    height: 570px;
   }
 
   .sm\:h-600 {
@@ -25572,6 +25603,14 @@ video {
     height: 256px;
   }
 
+  .md\:h-400 {
+    height: 400px;
+  }
+
+  .md\:h-570 {
+    height: 570px;
+  }
+
   .md\:h-600 {
     height: 600px;
   }
@@ -36376,6 +36415,14 @@ video {
     height: 256px;
   }
 
+  .lg\:h-400 {
+    height: 400px;
+  }
+
+  .lg\:h-570 {
+    height: 570px;
+  }
+
   .lg\:h-600 {
     height: 600px;
   }
@@ -47178,6 +47225,14 @@ video {
 
   .xl\:h-256 {
     height: 256px;
+  }
+
+  .xl\:h-400 {
+    height: 400px;
+  }
+
+  .xl\:h-570 {
+    height: 570px;
   }
 
   .xl\:h-600 {

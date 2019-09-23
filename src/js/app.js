@@ -1,53 +1,73 @@
+// import {id as Id,ale} from './helpers'
+//  import {nav} from './menu.js'
+
+    const  Id =  document.getElementById.bind(document)
+    const  className =  document.getElementsByClassName.bind(document) 
+    const  tagName =  document.getElementsByTagName.bind(document) 
  
-
-(function (d) {
-
-    let navToggle = d.getElementById('nav-toggle')
-    let nav = d.getElementById('nav')
-
+  // Toggle and Menu
+    let d =  document
+    let navToggle = Id('nav-toggle')
+    let nav = Id('nav') 
 
     navToggle.addEventListener('click', () => {
       navToggle.classList.toggle('nav-toggle-active') 
       nav.classList.toggle('nav-active') 
-    }) 
+    })  
 
-    let menu =   d.getElementById('menu')
+    let menu =   Id('menu')
     menu.addEventListener('click',(e)=>{ 
           nav.classList.toggle('nav-active') 
           navToggle.classList.toggle('nav-toggle-active') 
     }) 
-    showModal = (element) => {
-        let img = element.getElementsByTagName('img')[0].src;
-        let caption = element.getElementsByTagName('img')[0].dataset.caption;
-        d.getElementById('imageModal').innerHTML = '<img src="' + img + '">';
-        d.getElementById('captionModal').innerHTML = '<p>' + caption + '</p>';
 
-        d.getElementsByClassName('wrappModal')[0].classList.add('showModal');
-        d.getElementsByClassName('overflow')[0].classList.add('showModalWrapp');
-    }
-
-    closeModal = () => {
-        d.getElementsByClassName('wrappModal')[0].classList.remove('showModal');
-        d.getElementsByClassName('overflow')[0].classList.remove('showModalWrapp');
-    }
-
+    // Gallery Modal
+    // const slider  =  Id('gallery')
+    const gallerModalWrap = Id('gallery-modal-wrap')
+    // slider.addEventListener('click',(e)=>{
+    //   let src = e.target.currentSrc
+    //   if(src !== undefined){
+    //     Id('gallery-modal-img').innerHTML = `<img src="${src}">`
+    //     Id('gallery-modal-caption').innerHTML = `<p>${ e.target.dataset.caption}</p>`
+    //     gallerModalWrap.classList.add('gallery-modal-show')
+    //   }else{
+    //     return;
+    //   }
+    // })
+    Id('gallery-modal__btn').addEventListener('click',()=>{
+      gallerModalWrap.classList.remove('gallery-modal-show')
+    }) 
+    $("#gallery").click(function (e) {
+      let src = e.target.currentSrc
+      if(src !== undefined){  
+        Id('gallery-modal-img').innerHTML = `<img src="${src}">`
+        Id('gallery-modal-caption').innerHTML = `<p>${ e.target.dataset.caption}</p>`
+        gallerModalWrap.classList.add('gallery-modal-show') 
+        console.log(e.target.currentSrc)
+        
+      }else{
+        return;
+      }  
+    });
+   
+ 
     // Plano Modal
     showModalPlano = (element) => {
         let img = element.getElementsByTagName('img')[0].src;
-        d.getElementById('live-modal__img').innerHTML = '<img src="' + img + '">';
+        Id('live-modal__img').innerHTML = '<img src="' + img + '">';
 
-        d.getElementById('live-modal-wrap').classList.add('live-modal-wrap-active');
-        d.getElementsByClassName('overflow_plano')[0].classList.add('show-modal-wrapp');
+        Id('live-modal-wrap').classList.add('live-modal-wrap-active');
+        className('overflow_plano')[0].classList.add('show-modal-wrapp');
     }
 
     closeModalPlano = () => {
-        d.getElementById('live-modal-wrap').classList.remove('live-modal-wrap-active');
-        d.getElementsByClassName('overflow_plano')[0].classList.remove('show-modal-wrapp');
+        Id('live-modal-wrap').classList.remove('live-modal-wrap-active');
+        className('overflow_plano')[0].classList.remove('show-modal-wrapp');
     } 
  
 
-    let formMessage = d.getElementById('form-message')
-    let form = d.getElementById('form') 
+    let formMessage = Id('form-message')
+    let form = Id('form') 
     $("form").submit(function (event) {
         if ($("input").first().val() === "") {  
             return;
@@ -55,8 +75,7 @@
         // event.preventDefault(); 
         $(".form-message").show().fadeOut(6000);    
     });
- 
-
+     
 
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
@@ -85,6 +104,5 @@
                     });
                 }
             }
-        });
-})(document);
+        }); 
 

@@ -1,14 +1,16 @@
-html {
-  scroll-behavior: smooth;
+ html {
+  scroll-behavior: smooth; 
+}
+*::selection{
+  background: $second-jade;
+  color: #fff;
 }
 body{
   overflow-x: hidden;
-}
-
+} 
 .encabezado-home{
    position: relative;
-   z-index: 1;
-  
+   z-index: 1; 
    h1 {
      background-color: rgba($first-steelblue-dark, .95);
      font-size: 2.2rem;
@@ -16,9 +18,11 @@ body{
      font-family: $akrobat;
      font-weight: 700;
        @media (max-width:$sm) {
-            font-size: 1.5rem;
-
+            font-size: 1.5rem; 
        }
+       @media (max-width:$xs) {
+        font-size: 1rem; 
+        }
 
      span {
        color: $second-jade;
@@ -69,22 +73,24 @@ body{
     }
   }
   &-characteristics{
-    padding-left: 5em; 
-    @media (max-width:$sm) {
-     padding-left: 4em;
-
+    padding-left: .8em;   
+    @media (max-width:$xs) { 
+      padding-left: 0; 
     }
-
     li{
       position: relative; 
       margin-bottom: 1.7em;
       display: flex;
       align-items: center;
+      
       img{
         width: 56px;
         height: 40px;
-        position: absolute;
-        left: -4.5em; 
+        margin-right: 1em;
+        @media (max-width:$xs) {
+          width: 40px;
+          height: auto;
+        }
       }
       p{
         font-family: $akrobat;
@@ -107,112 +113,106 @@ body{
       background: $second-jade;
       color: #fff;
     }
+  } 
+}
+.gallery{ 
+  @at-root {
+    .slick-dots li button:before{
+      font-size: 25px;
+    }
   }
-  &-gallery{  
-    @at-root {
-      .slick-dots li button:before{
-        font-size: 25px;
+  .slick-slide {
+    height: 13.2em; 
+    padding: .3em; 
+    overflow: hidden;   
+    @media (max-width:$xl) {
+      height: 11.2em;
+    }
+    @media (max-width:400px) {
+      padding: 0em;
+    }
+    @media (max-width:1025px) {
+       height: 18em; 
+      img {
+        height: 18em;
+        object-fit: cover;
+        object-position: center;
       }
     }
-    .slick-slide {
-      height: 13.2em; 
-      padding: .3em;
-      @media (max-width:400px) {
-        padding: 0em;
-      }
-      @media (max-width:1025px) {
-         height: 18em; 
-        img {
-          height: 18em;
-          object-fit: cover;
-          object-position: center;
-        }
-      }
 
-      @media (max-width:600px) { 
-        height: 13.3em; 
-        img{
-          height: 13.3em ;
-          object-fit: cover;
-          object-position: center;
-        }
+    @media (max-width:600px) { 
+      height: 13.3em; 
+      img{
+        height: 13.3em ;
+        object-fit: cover;
+        object-position: center;
       }
     }
-    &__caption { 
+  }  
+  &-modal{ 
+    &-img{
+      box-shadow: 0 0 45px 4px rgba(0, 0, 0, 0.28);
+    }
+    &__btn{
+      position: relative;
+      font-size: 0;
+      width: 30px;
+      height: 30px; 
+      &::before, &::after{
+        content: '';
+        position: absolute;
+        top: 11px;
+        right:0;
+        height: 4px;
+        width: 30px;
+        border-radius: 33px;
+        background: white; 
+        transform: rotate(45deg) ;
+        @media (max-width:$md) {
+          width: 20px;
+        }
+      }
+      &::after{ 
+        transform: rotate(-45deg) ;
+      }
+    }
+    &-wrap{
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background:rgba($first-steelblue-dark, .95); 
+      opacity: 0;
+      z-index: -5;
+      visibility: hidden;
+      transition: all .6s cubic-bezier(0.36, 1.58, 1, 1);
+      @media (max-width:$md) {
+        padding: 1em;
+      }
+    }
+    &-caption{ 
       p {
         font-family: $akrobat;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 5px;
+        @media (max-width:$sm) {
+          font-size:14px;
+        }
+        @media (max-width:$xs) {
+          font-size:13px;
+        }
       }
     }
-
-  }
-}
+    &-show{
+      opacity: 1;
+      z-index: 1000;
+      visibility: visible;  
+    }
+  } 
+} 
  
-.overflow {
-  background-color: rgba($first-steelblue-black, .8);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0;
-  transition: all ease-in-out .3s;
-}
-.wrappModal {
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: all ease-in-out .3s;
-  img {
-    width: 100%;
-  }
-  p {
-    width: 100%;
-    font-family: $akrobat;
-    padding: 10px 0;
-    color: #ffffff;
-    letter-spacing: 1px; 
-  }
-}
-.closeModal {
-  svg {
-    width: 1.5vw;
-    min-width: 15px;
-    path {
-      transition: all ease-in-out .3s;
-      color: #ffffff;
-    }
-  }
-  &:hover {
-    svg {
-      path {
-        transition: all ease-in-out .3s;
-        color: $second-jade;
-      }
-    }
-  }
-}
-.showModalWrapp {
-  opacity: 1;
-  z-index: 999;
-  transition: all ease-in-out .3s;
-}
-.showModal {
-  opacity: 1;
-  z-index: 1000;
-  transition: all ease-in-out .3s;
-    @media (max-width:$md) {
-      padding: 1em;
-    }
-
-
-}
 .slick-next,
 .slick-prev {
   transition: all ease-in-out .3s;
@@ -244,37 +244,48 @@ body{
   transition: all ease-in-out .3s;
   opacity: 0;
   display: none; 
-}
-
+} 
 .espacios{
   position: relative ;
-  height: 95vh;
-  @media (max-width:$md) {
-    height: 80vh !important;
-  }
+  height: 95vh; 
+  overflow: hidden; 
+  @media (max-width:$lg) { 
+    height:80vh; 
+  } 
+  @media (max-width:$md) { 
+    height:70vh; 
+  } 
     @media (max-width:$sm) {
-      height: 60vh !important;
-    }
-
-
+      height: 50vh ;
+    }  
   &-imgwrap{
-    & img{ 
-      height: 95vh;
+    height: auto; 
+    @media (max-width:$sm) {
+         height: 323px; 
+    }
+    & img{  
+      width: 100%; 
+      height: auto;  
       object-fit: cover;
-      object-position: top;
-       @media (max-width:$md) {
-             height: 80vh !important; 
-       }
-       @media (max-width:$sm) {
-             height: 60vh !important; 
-       }
-
+      object-position: top; 
+      @media (max-width:$md) {
+        height: 100%; 
+      }
+       
     }
   }
   &-description{
      position: absolute;
-     bottom: 2.5em;
-     z-index: 7;
+     bottom: 5%;
+     z-index: 2; 
+     &-img{ 
+      @media (max-width:$md) {
+        width: 380px;
+      }
+      @media (max-width:$sm) {
+        width:300px;
+      }
+     }
   }
 }
  
