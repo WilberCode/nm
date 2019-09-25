@@ -52,7 +52,7 @@
       <header class="header shadow w-full h-auto  ">
         <div id="header-wrap" class=" bg-white relative flex flex-wrap justify-between container h-105  lg:h-105">
           <div class="logo relative z-50">
-             <a href="http://adretail.pe/nmespacios/">
+             <a href="/">
               <img src="img/logonm.png" alt="" />
             </a>
           </div>
@@ -82,7 +82,7 @@
           <span>1</span>
         </h1>
       </div>
-      <div class="services" id="nosotros">
+      <div class="services" >
           <div class="container flex flex-wrap mt-10">
               <div class="w-full md:w-2/5">
                   <h1 class=" text-base sm:text-xl font-bold text-black" data-aos="fade-up" >Te damos el espacio que necesitas</h1>
@@ -143,14 +143,14 @@
           </div>  
       </div> 
       <div id="gallery-modal-wrap" class="gallery-modal-wrap flex justify-center items-center">
-        <div class="gallery-modal text-right">
+        <div id="gallery-modal" class="gallery-modal text-right">
           <button id="gallery-modal__btn" class="gallery-modal__btn  text-right">X</button>
           <div id="gallery-modal-img" class="flex justify-center w-full"></div>
           <div id="gallery-modal-caption" class="gallery-modal-caption text-center text-xl font-bold"></div>
         </div>  
       </div> 
 
-     <div class="w-full espacios mt-16 " id="departamentos">
+     <div class="w-full espacios mt-16 " >
       <div class="owl-carousel owl-theme h-600 md:h-auto">
         <div class="espacios-imgwrap">
           <img src="img/slider/slider-1.png" class="block "/>
@@ -177,7 +177,7 @@
       </div>
     </div>
    
-      <div class="live relative z-10">
+      <div class="live relative z-10" id="departamentos">
         <div class="container live-wrap mt-16">
           <h1 class="text-jade text-base  text-left sm:text-3xl font-semibold">DECIDE DÓNDE QUIERES VIVIR</h1>
           <div class="live-box w-full mt-6">
@@ -203,23 +203,20 @@
                 <div id="live-modal-wrap" class="live-modal-wrap flex justify-center items-center">
                   <div class="live-modal text-right">
                     <button id="live-modal__btn" class="live-modal__btn  text-right">X</button>
-                    <div id="live-modal-img" class="flex justify-center w-full bg-white"></div> 
+                    <div id="live-modal-img" class="live-modal-img  py-3 flex justify-center w-full bg-white"></div> 
                   </div>
                 </div> 
               <!-- plano fila start 1 -->
                <div class="live-info__squard w-full flex flex-nowrap ">
-                <div       class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
-<div class="live-info__squard-plane-img-wrap text-center " id="plano1">
-
+                <div class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
+                  <div class="live-info__squard-plane-img-wrap text-center " id="plano1"> 
                        <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/101.png" alt="">
                   </div>
                   <button class="live-info__squard-btn absolute left-0 top-0 "> 
                   </button>
                 </div>
                 <div class="w-1/6 py-2 text-center flex border-r border-white justify-center items-center bg-gray-200 ">
-                  <div class="">
-                        
-                    
+                  <div class=""> 
                       <p class="text-black font-semibold" >
                           Piso 1 <br>
                           101 <br>
@@ -1682,8 +1679,8 @@
                     <h2 class=" text-lg sm:text-4xl font-bold akrobat  md:mt-16">UBICACIÓN INMEJORABLE A UN PASO DE SAN ISIDRO</h2>
                     <p class="text-base sm:text-xl mt-5">
                       <strong  >El Edificio RUTTE1</strong>
-                      <br> cuenta con una ubicación privilegiada y estratégica, muy cerca de avenidas principales como son Javier Pardo Oeste, Av.
-                      Brasil y Av. Pershing.</p>
+                      <br> cuenta con una ubicación privilegiada y estratégica, muy cerca de avenidas principales como son Javier Pardo Oeste, Av. 
+                      Brasil <br> y Av. Pershing.</p>
                     <p class="text-base sm:text-xl mt-3" >
                       A solo 10 minutos de la Costa Verde y del Centro Comercial Real Plaza. Rodeado de parques y cerca de los principales restaurantes,
                       supermercados, centros de entretenimiento, centros educativos, bancos y más. ¡Vive cerca de todo lo que te gusta!
@@ -1780,24 +1777,25 @@
           <div class="w-full md:w-1/2">
             <div class="pl-0 md:pl-10 lg:pl-20" >
               <h1 class="akrobat text-xl sm:text-4xl text-white mt-20 font-bold">COMUNÍCATE CON NOSOTROS</h1>
-              <p class="text-white text-sm md:text-lg lg:text-xl font-thin mt-5">informes@nuevomundoespacios.com.pe
-                <br> 913 050 274
-                <br> (01) 624 3601</p>
-              <h1 class="akrobat text-xl sm:text-3xl  text-white font-bold mt-8"> VISITA LA SALA DE VENTAS</h1>
-              <p class="text-white text-lg md:text-xl font-thin">Rodolfo Rutte 650 Magdalena</p>
+              <p class="text-white text-sm md:text-lg lg:text-xl font-thin mt-2">informes@nuevomundoespacios.com.pe</p>
+              <p class="text-white tracking-widest middle mt-2"> <img class="h-24 inline-block mr-3 middle" src="img/svg/cellphone.png" alt=""> 913 050 272</p>  
+              <p class="text-white tracking-widest middle mt-2" ><img class="h-24 inline-block mr-3 middle " src="img/svg/phone.png" alt="">(01) 624 3601</p>  
+              <h1 class="akrobat text-xl sm:text-3xl  text-white font-bold mt-5"> VISITA LA SALA DE VENTAS</h1>
+              <p class="text-white text-lg md:text-xl font-thin leading-none">Rodolfo Rutte 650 Magdalena</p>
+              <a class="text-blue-300 text-sm" href="#ubicacion">VER MAPA</a>
             </div>
           </div>
         </div>
         <p class="text-sm text-white tracking-wide mt-5 text-thin" >NUEVO MUNDO ESPACIOS te recuerda que tus datos personales están incorporados en su banco de datos de “Clientes” y que son
         utilizados para identificarte y/o atender tus consultas, comentarios, peticiones, reclamos u otros requerimientos y actualizar
         tu información personal, relacionados a la(s) unidad(es) inmobiliaria(s) que separaste o adquiriste de la empresa, hasta
-        que nos manifiestes tu voluntad de no continuar con el uso de tus datos, según nuestra <a href="http://adretail.pe/nmespacios/politica-privacidad-web" class="text-blue-500">POLÍTICAS DE PRIVACIDAD WEB</a></p>
-        <p class="text-sm text-white tracking-wide mt-5 text-thin" >Al hacer clic en “ENVIAR” otorgo mi <a href="http://adretail.pe/nmespacios/uso-datos-personales" class="text-blue-500">CONSENTIMIENTO INFORMADO </a>y declaro que conozco las <a href="http://adretail.pe/nmespacios/politica-privacidad-web" class="text-blue-500" >POLÍTICAS DE PRIVACIDAD WEB</a> de NUEVO
+        que nos manifiestes tu voluntad de no continuar con el uso de tus datos, según nuestra <a href="/politica-privacidad-web" class="text-blue-300">POLÍTICAS DE PRIVACIDAD WEB</a></p>
+        <p class="text-sm text-white tracking-wide mt-5 text-thin" >Al hacer clic en “ENVIAR” otorgo mi <a href="/uso-datos-personales" class="text-blue-300">CONSENTIMIENTO INFORMADO </a>y declaro que conozco las <a href="/politica-privacidad-web" class="text-blue-300" >POLÍTICAS DE PRIVACIDAD WEB</a> de NUEVO
         MUNDO ESPACIOS.</p>
       </div>
   </div>
 
-  <div class="projects mt-10">
+  <div class="projects mt-10" id="nosotros">
     <div class="container">
       <div class="px-2">
         <div class="flex flex-wrap -mx-1 mb-2">
@@ -1862,26 +1860,26 @@
       <section class=" block sm:flex flex-wrap ">
         <div class="w-full md:w-1/2 block md:flex">
           <div class=" w-full md:w-1/3">
-            <a href="http://adretail.pe/nmespacios/">
-              <img class="w-16  md:w-20 lg:w-32 xl:w-40 " src="img/logonm-footer.png" alt=""/>
+            <a href="/">
+              <img class="w-16  md:w-20 lg:w-24 xl:w-40 " src="img/logonm-footer.png" alt="logo nmespacios"/>
             </a>
           </div>
-          <div class=" w-full md:w-2/3 footer-legal mt-10 md:mt-16" id="transparencia" >
+          <div class=" w-full md:w-2/3 footer-legal mt-10 md:mt-16 " id="transparencia" >
             <p class="mb-3">
-              <a href="http://adretail.pe/nmespacios/terminos-condiciones"> TÉRMINOS Y CONDICIONES </a>
+              <a href="/terminos-condiciones"> TÉRMINOS Y CONDICIONES </a>
             </p>
             <p class="mb-3">
-              <a href="http://adretail.pe/nmespacios/uso-datos-personales"> USO DE DATOS PERSONALES </a>
+              <a href="/uso-datos-personales"> USO DE DATOS PERSONALES </a>
             </p>
             <p class="mb-3">
-              <a href="http://adretail.pe/nmespacios/politica-privacidad-web"> POLÍTICA DE PRIVACIDAD WEB </a>
+              <a href="/politica-privacidad-web"> POLÍTICA DE PRIVACIDAD WEB </a>
             </p>
           </div>
         </div>
         <div class="w-full md:w-1/2 mt-8 sm:mt-16">
-          <p class="text-white font-thin text-sm text-center md:text-left">Las imágenes, planos y características mostradas en este catálogo son referenciales y podrían mostrar modificaciones
-            en el transcurso del proyecto sin previo aviso, por razones municipales, técnicas o por falta de NUEVO MUNDO disponibilidad
-            de materiales en el mercado.</p>
+          <p class="text-white font-thin text-sm text-center md:text-left">Las imágenes, planos y características mostradas en este catálogo son referenciales y podrían mostrar modificaciones en el
+          transcurso del proyecto sin previo aviso, por razones municipales, técnicas o por falta de disponibilidad de materiales en
+          el mercado.</p>
         </div>
       </section>
       <section class="block md:flex flex-wrap mt-10 md:mt-20 pb-10 ">

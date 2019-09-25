@@ -385,9 +385,10 @@ body{
     
   } 
   &-modal {
+    width: 400px;
     &-img {
       box-shadow: 0 0 45px 4px rgba(0, 0, 0, 0.28);
-      width: 100%;
+      width: 400px;
       max-width:600px;
       background: white;
     }
@@ -446,7 +447,7 @@ body{
     }
     &-show {
       opacity: 1;
-      z-index: 1000;
+      z-index: 10000;
       visibility: visible;
     }
   }  
