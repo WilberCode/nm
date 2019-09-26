@@ -1766,16 +1766,18 @@
              </div>
              <?php 
  
-
-              $mensaje ="Mensaje del formulario de contacto de nuevomundoespacios.com.pe";  
-              $mensaje.= "\nNombre y Apellidos ". isset($_POST['name']);
-              $mensaje.= "\nEmail: ".isset($_POST['email']);
-              $mensaje.= "\nTelefono: ". isset($_POST['phone']);
-              $mensaje.= "\nMensaje: \n".isset($_POST['message']); 
-              $destino= "wphfrontend@gmail.com";
-              $remitente = isset($_POST['email']);
-              $asunto = "Mensaje enviado por: ".isset($_POST['name']);
-              mail($destino,$asunto,$mensaje,"FROM: $remitente");
+              if(empty($_POST['email']) ){
+                $mensaje="Mensaje del formulario de contacto de nuevomundoespacios.com.pe";  
+                $mensaje.= "\nNombre y Apellidos ". isset($_POST['name']);
+                $mensaje.= "\nEmail: ".isset($_POST['email']);
+                $mensaje.= "\nTelefono: ". isset($_POST['phone']);
+                $mensaje.= "\nMensaje: \n".isset($_POST['message']);
+                $destino= "wphfrontend@gmail.com";
+                $remitente = isset($_POST['email']);
+                $asunto = "Mensaje enviado por: ".isset($_POST['name']);
+                mail($destino,$asunto,$mensaje,"FROM: $remitente"); 
+              }
+             
             ?>  
           </div>
           <div class="w-full md:w-1/2">
