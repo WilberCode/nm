@@ -1775,6 +1775,7 @@
                       <body>
                        <h1>Titilo del formulario</h1>
                          ';
+                         
               $mensaje.="Mensaje del formulario de contacto de nuevomundoespacios.com.pe";  
               $mensaje.= "\nNombre y Apellidos ". isset($_POST['name']);
               $mensaje.= "\nEmail: ".isset($_POST['email']);
