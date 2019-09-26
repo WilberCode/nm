@@ -1,4 +1,4 @@
-<?php $ruta_web = 'http://localhost:8080/nm'; ?>
+<?php $ruta_web = 'http://adretail.pe/nm'; ?>
 <!DOCTYPE html>
 <html lang="en">
 

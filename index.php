@@ -1,4 +1,4 @@
-<?php $ruta_web = 'http://localhost:8080/nm'; ?>
+<?php $ruta_web = 'http://adretail.pe/nm'; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -178,6 +178,13 @@
       </div>
     </div>
    
+      <div id="live-modal-wrap" class="live-modal-wrap flex justify-center items-center">
+        <div class="live-modal text-right">
+          <button id="live-modal__btn" class="live-modal__btn  text-right">X</button>
+          <div id="live-modal-img" class="live-modal-img  py-3 flex justify-center w-full bg-white"></div> 
+        </div>
+    </div> 
+
       <div class="live relative z-10" id="departamentos">
         <div class="container live-wrap mt-16">
           <h1 class="text-jade text-base  text-left sm:text-3xl font-semibold">DECIDE DÓNDE QUIERES VIVIR</h1>
@@ -199,14 +206,8 @@
                 <h4 class="text-sm md:text-xl" >Precio</h4>
               </div>
             </div>
-            <div class="live-info">
-              <div class="live-info__content">   
-                <div id="live-modal-wrap" class="live-modal-wrap flex justify-center items-center">
-                  <div class="live-modal text-right">
-                    <button id="live-modal__btn" class="live-modal__btn  text-right">X</button>
-                    <div id="live-modal-img" class="live-modal-img  py-3 flex justify-center w-full bg-white"></div> 
-                  </div>
-                </div> 
+            <div class="live-info"> 
+              <div class="live-info__content">    
               <!-- plano fila start 1 -->
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
