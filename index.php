@@ -1765,11 +1765,24 @@
                 </div>
              </div>
              <?php 
-              $mensaje="Mensaje del formulario de contacto de nuevomundoespacios.com.pe";
+
+             $message = '
+                      <html>
+                      <head>
+                        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                        <title>Fillon soutient à fond le retour d\'un Grand Prix de France</title>
+                      </head>
+                      <body>
+                       <h1>Titilo del formulario</h1>
+                         ';
+              $mensaje.="Mensaje del formulario de contacto de nuevomundoespacios.com.pe";  
               $mensaje.= "\nNombre y Apellidos ". isset($_POST['name']);
               $mensaje.= "\nEmail: ".isset($_POST['email']);
               $mensaje.= "\nTelefono: ". isset($_POST['phone']);
               $mensaje.= "\nMensaje: \n".isset($_POST['message']);
+              $message .= ' 
+                      </body>
+                      </html>';
               $destino= "wphfrontend@gmail.com";
               $remitente = isset($_POST['email']);
               $asunto = "Mensaje enviado por: ".isset($_POST['name']);
@@ -1779,9 +1792,9 @@
           <div class="w-full md:w-1/2">
             <div class="pl-0 md:pl-10 lg:pl-20" >
               <h1 class="akrobat text-xl sm:text-4xl text-white mt-20 font-bold">COMUNÍCATE CON NOSOTROS</h1>
-              <p class="text-white text-sm md:text-lg lg:text-xl font-thin mt-2">informes@nuevomundoespacios.com.pe</p>
-              <p class="text-white tracking-widest middle mt-2"> <img class="h-24 inline-block mr-3 middle" src="img/svg/cellphone.png" alt=""> 913 050 272</p>  
-              <p class="text-white tracking-widest middle mt-2" ><img class="h-24 inline-block mr-3 middle " src="img/svg/phone.png" alt="">(01) 624 3601</p>  
+              <p class="text-white text-sm md:text-lg lg:text-xl font-thin mt-2"> <a class="text-white text-sm md:text-lg lg:text-xl font-thin" href="mailto:informes@nuevomundoespacios.com.pe">informes@nuevomundoespacios.com.pe</a> </p>
+              <p class="text-white tracking-widest middle mt-2"> <img class="h-24 inline-block mr-3 middle" src="img/svg/cellphone.png" alt="celular"> <a class="text-white tracking-widest middle" href="tel:+51913050272">913 050 272</a> </p>  
+              <p class="text-white tracking-widest middle mt-2" ><img class="h-24 inline-block mr-3 middle " src="img/svg/phone.png" alt="telefono"> <a class="text-white tracking-widest middle" href="tel:+016243601">(01) 624 3601</a></p>  
               <h1 class="akrobat text-xl sm:text-3xl  text-white font-bold mt-5"> VISITA LA SALA DE VENTAS</h1>
               <p class="text-white text-lg md:text-xl font-thin leading-none">Rodolfo Rutte 650 Magdalena</p>
               <a class="text-blue-300 text-sm" href="#ubicacion">VER MAPA</a>
