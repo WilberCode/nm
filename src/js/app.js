@@ -13,11 +13,13 @@
       navToggle.classList.toggle('nav-toggle-active') 
       nav.classList.toggle('nav-active') 
      
+     
     })  
     
     Id('menu').addEventListener('click',(e)=>{ 
           nav.classList.toggle('nav-active') 
           navToggle.classList.toggle('nav-toggle-active') 
+          
     }) 
 
     // Gallery Modal 
@@ -35,16 +37,18 @@
       }  
     });
     // Close Modal Gallery
-    Id('gallery-modal__btn').addEventListener('click', () => {
+
+
+    $("#gallery-modal__btn").click(function (e) { 
         gallerModalWrap.classList.remove('gallery-modal-show')
-    }) 
-    Id('gallery-modal-wrap').addEventListener('click', (e) => { 
-        const parentID = e.target.parentNode.parentNode.id 
-        if (parentID !== 'gallery-modal'){
-            gallerModalWrap.classList.remove('gallery-modal-show') 
-        } else{
-            return;
-        }  
+    })  
+    $("#gallery-modal-wrap").click(function (e) { 
+    const parentID = e.target.parentNode.parentNode.id 
+    if (parentID !== 'gallery-modal'){
+        gallerModalWrap.classList.remove('gallery-modal-show') 
+    } else{
+        return;
+    }  
     })
 
    
@@ -55,22 +59,21 @@
             if (src !== undefined ) {
             Id('live-modal-img').innerHTML = `<img src="${src}">` 
             Id('live-modal-wrap').classList.add('live-modal-show')  
-            Id('departamentos').classList.add('live-no-scroll')     
-
+            Id('departamentos').classList.add('live-no-scroll')      
 
             } else {
             return;
             }
     });
-    // Close Modal Plano
-    Id('live-modal__btn').addEventListener('click', () => {
+    // Close Modal Plano 
+    $("#live-modal__btn").click(function (e) { 
         Id('live-modal-wrap').classList.remove('live-modal-show')
          Id('departamentos').classList.remove('live-no-scroll')
 
     }) 
 
-
-    Id('live-modal-wrap').addEventListener('click', (e) => {
+ 
+     $("#live-modal-wrap").click(function (e) { 
         const parentID = e.target.parentNode.id 
         if (parentID !== 'live-modal-img' && e.target.id !== 'live-modal-img' ) {
             Id('live-modal-wrap').classList.remove('live-modal-show')
@@ -84,13 +87,21 @@
 
     let formMessage = Id('form-message')
     let form = Id('form') 
+
+    let currentHostname = window.location.host
     $("form").submit(function (event) {
         if ($("input").first().val() === "") {  
             return;
         } 
         // event.preventDefault(); 
         $(".form-message").show().fadeOut(6000);    
+        reloadPage()
     });
+    function reloadPage(){
+        setTimeout(() => {
+            window.location.replace('kjlj.com')
+        }, 8000)
+    }
 
       // Elimina el hash de los links
 
