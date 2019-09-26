@@ -292,7 +292,9 @@ body{
    @media (max-width:1137px) { 
      overflow-x: auto; 
    }
- 
+  &-no-scroll{
+    overflow-x: hidden !important;
+  }
   &-wrap{
     width: 1137px !important;    
   }
@@ -482,8 +484,16 @@ body{
     max-width: 1360px;
     margin-left: auto;
     margin-right: auto;
-  }
+  } 
   &-legal{
+    @media (max-width:1385px) {
+
+      padding-left: 2em;
+    }
+    @media (max-width:1250px) {
+      padding-left:2;
+    }
+
     p{
       font-family: $akrobat; 
       a{

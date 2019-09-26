@@ -14,7 +14,7 @@
     <meta property="og:title" content="NUEVO MUNDO ESPACIOS">
     <meta property="og:description" content="El Grupo Nuevo Mundo Inmobiliaria cuenta con la experiencia de más de 14 años en la construcción, gerencia de proyectos y administración de centros empresariales y hoteles, lo que nos permite ofrecer hoy, departamentos con espacios que cubran
           las expectativas y exigencias del mercado.">
-    <meta property="og:url" content="https://nmespacios.com">
+    <meta property="og:url" content="nuevomundoespacios.com.pe">
     <meta property="og:site_name" content="NM ESPACIOS">
     <meta property="og:image" content="img/logonm.png">
     <meta property="og:image:secure_url" content="img/logonm.png">
@@ -1764,14 +1764,14 @@
                 </div>
              </div>
              <?php 
-              $mensaje="Mensaje del formulario de contacto de nmespacios.com";
-              $mensaje.= "\nNombre y Apellidos ". $_POST['name'];
-              $mensaje.= "\nEmail: ".$_POST['email'];
-              $mensaje.= "\nTelefono: ". $_POST['phone'];
-              $mensaje.= "\nMensaje: \n".$_POST['message'];
+              $mensaje="Mensaje del formulario de contacto de nuevomundoespacios.com.pe";
+              $mensaje.= "\nNombre y Apellidos ". isset($_POST['name']);
+              $mensaje.= "\nEmail: ".isset($_POST['email']);
+              $mensaje.= "\nTelefono: ". isset($_POST['phone']);
+              $mensaje.= "\nMensaje: \n".isset($_POST['message']);
               $destino= "wphfrontend@gmail.com";
-              $remitente = $_POST['email'];
-              $asunto = "Mensaje enviado por: ".$_POST['name'];
+              $remitente = isset($_POST['email']);
+              $asunto = "Mensaje enviado por: ".isset($_POST['name']);
               mail($destino,$asunto,$mensaje,"FROM: $remitente");
             ?>  
           </div>
@@ -1862,10 +1862,10 @@
         <div class="w-full md:w-1/2 block md:flex">
           <div class=" w-full md:w-1/3">
             <a href="<?= $ruta_web ?>">
-              <img class="w-16  md:w-20 lg:w-24 xl:w-40 " src="img/logonm-footer.png" alt="logo nmespacios"/>
+              <img class=" footer-logo w-16  md:w-20 lg:w-24 xl:w-40 " src="img/logonm-footer.png" alt="logo nmespacios"/>
             </a>
           </div>
-          <div class=" w-full md:w-2/3 footer-legal mt-10 md:mt-16 " id="transparencia" >
+          <div class="footer-legal  w-full md:w-2/3 mt-10 md:mt-16 " id="transparencia" >
             <p class="mb-3">
               <a href="<?= $ruta_web ?>/terminos-condiciones"> TÉRMINOS Y CONDICIONES </a>
             </p>

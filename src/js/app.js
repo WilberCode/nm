@@ -55,6 +55,9 @@
             if (src !== undefined ) {
             Id('live-modal-img').innerHTML = `<img src="${src}">` 
             Id('live-modal-wrap').classList.add('live-modal-show')  
+            Id('departamentos').classList.add('live-no-scroll')     
+
+
             } else {
             return;
             }
@@ -62,6 +65,8 @@
     // Close Modal Plano
     Id('live-modal__btn').addEventListener('click', () => {
         Id('live-modal-wrap').classList.remove('live-modal-show')
+         Id('departamentos').classList.remove('live-no-scroll')
+
     }) 
 
 
