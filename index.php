@@ -1766,7 +1766,7 @@
              </div>
              <?php 
  
-              if(empty($_POST['email']) ){
+              if(!empty($_POST['email']) ){
                 $mensaje="Mensaje del formulario de contacto de nuevomundoespacios.com.pe";  
                 $mensaje.= "\nNombre y Apellidos ". isset($_POST['name']);
                 $mensaje.= "\nEmail: ".isset($_POST['email']);
