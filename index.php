@@ -1765,25 +1765,13 @@
                 </div>
              </div>
              <?php 
+ 
 
-             $message = '
-                      <html>
-                      <head>
-                        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-                        <title>Fillon soutient à fond le retour d\'un Grand Prix de France</title>
-                      </head>
-                      <body>
-                       <h1>Titilo del formulario </h1>
-                         ';
-
-              $mensaje.="Mensaje del formulario de contacto de nuevomundoespacios.com.pe";  
+              $mensaje ="Mensaje del formulario de contacto de nuevomundoespacios.com.pe";  
               $mensaje.= "\nNombre y Apellidos ". isset($_POST['name']);
               $mensaje.= "\nEmail: ".isset($_POST['email']);
               $mensaje.= "\nTelefono: ". isset($_POST['phone']);
-              $mensaje.= "\nMensaje: \n".isset($_POST['message']);
-              $message .= ' 
-                      </body>
-                      </html>';
+              $mensaje.= "\nMensaje: \n".isset($_POST['message']); 
               $destino= "wphfrontend@gmail.com";
               $remitente = isset($_POST['email']);
               $asunto = "Mensaje enviado por: ".isset($_POST['name']);
