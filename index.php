@@ -1,3 +1,4 @@
+<?php $ruta_web = 'http://localhost:8080/nm'; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -52,8 +53,8 @@
       <header class="header shadow w-full h-auto  ">
         <div id="header-wrap" class=" bg-white relative flex flex-wrap justify-between container h-105  lg:h-105">
           <div class="logo relative z-50">
-             <a href="/">
-              <img src="img/logonm.png" alt="" />
+             <a href="<?= $ruta_web ?>">
+              <img src="img/logonm.png" alt="Logo nm espacios" />
             </a>
           </div>
           <div class="nav-toggle-wrap block lg:hidden mt-4 lg:mt-0 h-48 absolute z-50">
@@ -67,14 +68,14 @@
             </button>
           </div>
           <nav id="nav" class="nav z-40  absolute lg:relative w-full lg:w-auto lg:flex  justify-end lg:items-center   h-auto lg:h-105 ">
-            <ul id="menu" class="menu w-full lg:flex  justify-end lg:items-center  lg:w-auto first-medium">
-              <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="#ubicacion">UBICACIÓN</a></li> 
-              <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="#contacto">CONTACTO</a></li>
-              <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="#departamentos">DEPARTAMENTOS</a></li>
-              <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="#transparencia">TRANSPARENCIA</a></li>
-              <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="#nosotros">NOSOTROS</a></li>
-            </ul>
-          </nav>
+          <ul id="menu" class="menu w-full lg:flex  justify-end lg:items-center  lg:w-auto first-medium">
+            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="<?= $ruta_web ?>/#ubicacion">UBICACIÓN</a></li> 
+            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="<?= $ruta_web ?>/#contacto">CONTACTO</a></li>
+            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="<?= $ruta_web ?>/#departamentos">DEPARTAMENTOS</a></li>
+            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="<?= $ruta_web ?>/#transparencia">TRANSPARENCIA</a></li>
+            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="<?= $ruta_web ?>/#nosotros">NOSOTROS</a></li>
+          </ul>
+        </nav>
         </div> 
       </header> 
       <div class="w-full encabezado-home relative z-10 flex justify-end parallax-window  py-6" data-parallax="scroll" data-image-src="img/bg-encabezado.jpg">
@@ -1727,26 +1728,26 @@
   <div class="contact bg-medium mt-16 py-10" id="contacto">
      <div class="container ">
         <div class="contact-form-wrap flex flex-wrap">
-          <div class="w-full md:w-1/2">
+            <div class="w-full md:w-1/2">
             <h1 class="akrobat text-white text-2xl">Ingresa tus datos y en breve te atenderemos</h1>
-            <form id="form" class="form mt-4 pr-0 lg:pr-30 ">
+            <form id="form" action="<?=$_SERVER['PHP_SELF']?>" method="post"  class="form mt-4 pr-0 lg:pr-30 ">
               <div class="form-group">
                 <label for="name">Nombres y apellidos</label>
-                <input type="text" class="name" id="name" required>
+                <input type="text" class="name" id="name" name="name" required>
               </div>
               <div class="flex flex-wrap mt-5"> 
                   <div class="form-group w-full  sm:w-2/3 pr-0 sm:pr-5">
                     <label for="email">E-mail</label>
-                    <input type="email" class="gmail" id="email" required>
+                    <input type="email" class="gmail" id="email" name="email" required>
                   </div>
                   <div class="form-group w-full mt-5  sm:mt-0 sm:w-1/3">
                     <label for="phone">Teléfono</label>
-                    <input type="tel" class="phone" maxlength="9" id="phone" required>
+                    <input type="tel" class="phone" maxlength="9" id="phone" name="phone" required>
                   </div>
               </div>
               <div class="form-group mt-5">
                 <label for="message">Mensaje</label>
-                <textarea class="w-full h-128 mt-2 p-2 " class="message" id="message" required></textarea>
+                <textarea class="w-full h-128 mt-2 p-2 " class="message" id="message" name="message" required></textarea>
               </div>
               <div class="mt-5  text-left sm:text-right ">
                 <button type="submit" class=" w-full sm:w-auto btn btn-send bg-jade">ENVIAR</button>
@@ -1762,6 +1763,17 @@
                   </div>
                 </div>
              </div>
+             <?php 
+              $mensaje="Mensaje del formulario de contacto de nmespacios.com";
+              $mensaje.= "\nNombre y Apellidos ". $_POST['name'];
+              $mensaje.= "\nEmail: ".$_POST['email'];
+              $mensaje.= "\nTelefono: ". $_POST['phone'];
+              $mensaje.= "\nMensaje: \n".$_POST['message'];
+              $destino= "wphfrontend@gmail.com";
+              $remitente = $_POST['email'];
+              $asunto = "Mensaje enviado por: ".$_POST['name'];
+              mail($destino,$asunto,$mensaje,"FROM: $remitente");
+            ?>  
           </div>
           <div class="w-full md:w-1/2">
             <div class="pl-0 md:pl-10 lg:pl-20" >
@@ -1778,8 +1790,8 @@
         <p class="text-sm text-white tracking-wide mt-5 text-thin" >NUEVO MUNDO ESPACIOS te recuerda que tus datos personales están incorporados en su banco de datos de “Clientes” y que son
         utilizados para identificarte y/o atender tus consultas, comentarios, peticiones, reclamos u otros requerimientos y actualizar
         tu información personal, relacionados a la(s) unidad(es) inmobiliaria(s) que separaste o adquiriste de la empresa, hasta
-        que nos manifiestes tu voluntad de no continuar con el uso de tus datos, según nuestra <a href="/politica-privacidad-web" class="text-blue-300">POLÍTICAS DE PRIVACIDAD WEB</a></p>
-        <p class="text-sm text-white tracking-wide mt-5 text-thin" >Al hacer clic en “ENVIAR” otorgo mi <a href="/uso-datos-personales" class="text-blue-300">CONSENTIMIENTO INFORMADO </a>y declaro que conozco las <a href="/politica-privacidad-web" class="text-blue-300" >POLÍTICAS DE PRIVACIDAD WEB</a> de NUEVO
+        que nos manifiestes tu voluntad de no continuar con el uso de tus datos, según nuestra <a href="<?= $ruta_web ?>/politica-privacidad-web" class="text-blue-300">POLÍTICAS DE PRIVACIDAD WEB</a></p>
+        <p class="text-sm text-white tracking-wide mt-5 text-thin" >Al hacer clic en “ENVIAR” otorgo mi <a href="<?= $ruta_web ?>/uso-datos-personales" class="text-blue-300">CONSENTIMIENTO INFORMADO </a>y declaro que conozco las <a href="<?= $ruta_web ?>/politica-privacidad-web" class="text-blue-300" >POLÍTICAS DE PRIVACIDAD WEB</a> de NUEVO
         MUNDO ESPACIOS.</p>
       </div>
   </div>
@@ -1849,19 +1861,19 @@
       <section class=" block sm:flex flex-wrap ">
         <div class="w-full md:w-1/2 block md:flex">
           <div class=" w-full md:w-1/3">
-            <a href="/">
-              <img class="w-16  md:w-20 lg:w-24 xl:w-40 " src="img/logonm-footer.png" alt=""/>
+            <a href="<?= $ruta_web ?>">
+              <img class="w-16  md:w-20 lg:w-24 xl:w-40 " src="img/logonm-footer.png" alt="logo nmespacios"/>
             </a>
           </div>
           <div class=" w-full md:w-2/3 footer-legal mt-10 md:mt-16 " id="transparencia" >
             <p class="mb-3">
-              <a href="/terminos-condiciones"> TÉRMINOS Y CONDICIONES </a>
+              <a href="<?= $ruta_web ?>/terminos-condiciones"> TÉRMINOS Y CONDICIONES </a>
             </p>
             <p class="mb-3">
-              <a href="/uso-datos-personales"> USO DE DATOS PERSONALES </a>
+              <a href="<?= $ruta_web ?>/uso-datos-personales"> USO DE DATOS PERSONALES </a>
             </p>
             <p class="mb-3">
-              <a href="/politica-privacidad-web"> POLÍTICA DE PRIVACIDAD WEB </a>
+              <a href="<?= $ruta_web ?>/politica-privacidad-web"> POLÍTICA DE PRIVACIDAD WEB </a>
             </p>
           </div>
         </div>

@@ -1,3 +1,5 @@
+<?php $ruta_web = 'http://localhost:8080/nm'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,9 +57,9 @@
     <header class="header shadow w-full h-auto  ">
       <div id="header-wrap" class=" bg-white relative flex flex-wrap justify-between container h-105  lg:h-105">
         <div class="logo relative z-50">
-           <a href="/">
-            <img src="../img/logonm.png" alt="" />
-          </a>
+           <a href="<?= $ruta_web ?>">
+              <img src="../img/logonm.png" alt="Logo nm espacios" />
+            </a>
         </div>
         <div class="block lg:hidden mt-4 lg:mt-0 h-48 relative z-50">
           <button  id="nav-toggle" class="nav-toggle focus:outline-none">  
@@ -71,11 +73,11 @@
         </div>
         <nav id="nav" class="nav z-40  absolute lg:relative w-full lg:w-auto lg:flex  justify-end lg:items-center   h-auto lg:h-105 ">
           <ul id="menu" class="menu w-full lg:flex  justify-end lg:items-center  lg:w-auto first-medium">
-            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="/#ubicacion">UBICACIÓN</a></li> 
-            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="/#contacto">CONTACTO</a></li>
-            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="/#departamentos">DEPARTAMENTOS</a></li>
-            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="/#transparencia">TRANSPARENCIA</a></li>
-            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="/#nosotros">NOSOTROS</a></li>
+            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="<?= $ruta_web ?>/#ubicacion">UBICACIÓN</a></li> 
+            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="<?= $ruta_web ?>/#contacto">CONTACTO</a></li>
+            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="<?= $ruta_web ?>/#departamentos">DEPARTAMENTOS</a></li>
+            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="<?= $ruta_web ?>/#transparencia">TRANSPARENCIA</a></li>
+            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="<?= $ruta_web ?>/#nosotros">NOSOTROS</a></li>
           </ul>
         </nav>
       </div> 
@@ -342,21 +344,21 @@
         <section class=" block sm:flex flex-wrap ">
           <div class="w-full md:w-1/2 block md:flex">
             <div class=" w-full md:w-1/3">
-              <a href="/">
+              <a href="<?= $ruta_web ?>">
                 <img class="w-16  md:w-20 lg:w-32 xl:w-40 " src="../img/logonm-footer.png" alt="" />
               </a>
             </div>
-            <div class=" w-full md:w-2/3 footer-legal mt-10 md:mt-16">
+             <div class=" w-full md:w-2/3 footer-legal mt-10 md:mt-16 " id="transparencia">
               <p class="mb-3">
-                <a href="/terminos-condiciones"> TÉRMINOS Y CONDICIONES </a>
+                <a href="<?= $ruta_web ?>/terminos-condiciones"> TÉRMINOS Y CONDICIONES </a>
               </p>
               <p class="mb-3">
-                <a href="/uso-datos-personales"> USO DE DATOS PERSONALES </a>
+                <a href="<?= $ruta_web ?>/uso-datos-personales"> USO DE DATOS PERSONALES </a>
               </p>
               <p class="mb-3">
-                <a href="/politica-privacidad-web"> POLÍTICA DE PRIVACIDAD WEB </a>
+                <a href="<?= $ruta_web ?>/politica-privacidad-web"> POLÍTICA DE PRIVACIDAD WEB </a>
               </p>
-            </div>
+          </div>
           </div>
           <div class="w-full md:w-1/2 mt-8 sm:mt-16">
             <p class="text-white font-thin text-sm text-center md:text-left">Las imágenes, planos y características mostradas en este catálogo son referenciales y podrían mostrar modificaciones
