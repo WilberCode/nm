@@ -1768,13 +1768,13 @@
  
               if(!empty($_POST['email']) ){
                 $mensaje="Mensaje del formulario de contacto de nuevomundoespacios.com.pe";  
-                $mensaje.= "\nNombre y Apellidos ". isset($_POST['name']);
-                $mensaje.= "\nEmail: ".isset($_POST['email']);
-                $mensaje.= "\nTelefono: ". isset($_POST['phone']);
-                $mensaje.= "\nMensaje: \n".isset($_POST['message']);
+                $mensaje.= "\nNombre y Apellidos ". $_POST['name'];
+                $mensaje.= "\nEmail: ".$_POST['email'];
+                $mensaje.= "\nTelefono: ". $_POST['phone'];
+                $mensaje.= "\nMensaje: \n".$_POST['message'];
                 $destino= "wphfrontend@gmail.com";
-                $remitente = isset($_POST['email']);
-                $asunto = "Mensaje enviado por: ".isset($_POST['name']);
+                $remitente = $_POST['email'];
+                $asunto = "Mensaje enviado por: ".$_POST['name'];
                 mail($destino,$asunto,$mensaje,"FROM: $remitente"); 
               }
              
