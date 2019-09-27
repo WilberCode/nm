@@ -97,8 +97,7 @@
         console.log(event)
         $(".form-message").show().fadeOut(6000);    
     });
-    function reloadPage(e){
-      // $("#email").val('') 
+    function reloadPage(e){ 
         $("#form :input").each(function(){
          $(this).val('')
          } )
