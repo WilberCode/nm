@@ -79,10 +79,7 @@
             return;
         }
     })
-
-
    
-
     let formMessage = Id('form-message')
     let form = Id('form') 
 
