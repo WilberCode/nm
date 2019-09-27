@@ -1768,16 +1768,16 @@
              <?php 
          
  
-              if(isset($_POST['email']) ){
+              if(isset($_POST['submit']) ){
                 $mensaje="Mensaje del formulario de contacto de nuevomundoespacios.com.pe";  
                 $mensaje.= "\nNombre y Apellidos ". $_POST['name'];
                 $mensaje.= "\nEmail: ".$_POST['email'];
                 $mensaje.= "\nTelefono: ". $_POST['phone'];
                 $mensaje.= "\nMensaje: \n".$_POST['message'];
-                $destino= "wphfrontend@gmail.com";
-                $remitente = $_POST['email'];
+                $to= "wphfrontend@gmail.com";
+                $from = $_POST['email'];
                 $asunto = "Mensaje enviado por: ".$_POST['name'];
-                mail($destino,$asunto,$mensaje,"FROM: $remitente"); 
+                mail($to,$asunto,$mensaje,"FROM: $from"); 
               }
              
             ?>  
