@@ -105,7 +105,7 @@
             e.target.submit(()=>{ 
               console.log('enviado!')
             }) 
-            // window.location.replace(currentHostname)
+            window.location.replace(currentHostname)
             // window.location.replace(currentHostname)
         }, 5000)
     } 
@@ -116,7 +116,7 @@
     $('a[href*="#"]') 
         .not('[href="#"]')
         .not('[href="#0"]')
-        .not('[href="index.php"]')
+        // .not('[href="index.php"]')
         .click(function (event) {
             // On-page links
             if (
