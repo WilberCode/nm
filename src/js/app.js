@@ -1,5 +1,4 @@
-  
-    // Shorthand 
+  // Shorthand 
     const  Id =  document.getElementById.bind(document)
     const  className =  document.getElementsByClassName.bind(document) 
     const  tagName =  document.getElementsByTagName.bind(document) 
