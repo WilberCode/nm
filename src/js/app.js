@@ -87,7 +87,7 @@
     let formMessage = Id('form-message')
     let form = Id('form') 
 
-    let currentHostname = window.location.host
+    let currentHostname = window.location.href
     $("form").submit(function (event) {
         if ($("input").first().val() === "") {  
             return;
