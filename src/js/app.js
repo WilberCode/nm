@@ -106,17 +106,18 @@
               $(this).val('')
             } )
             window.location.replace(currentHostname)
-        }, 5000)
-       
-    } 
-    
-
+        }, 5000) 
+    }  
       // Elimina el hash de los links
+      setTimeout(() => {  
+        window.location.replace(currentHostname)
+        
+    }, 4000) 
 
     $('a[href*="#"]') 
         .not('[href="#"]')
         .not('[href="#0"]')
-        // .not('[href="index.php"]')
+        .not('[href="index.php"]')
         .click(function (event) {
             // On-page links
             if (
