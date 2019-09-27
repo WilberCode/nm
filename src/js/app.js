@@ -103,7 +103,7 @@
          } )
         setTimeout(() => { 
             e.target.submit(()=>{ 
-             
+              window.location.replace(currentHostname)
             }) 
             // window.location.replace(currentHostname)
         }, 5000)
