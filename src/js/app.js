@@ -84,26 +84,26 @@
     let form = Id('form') 
 
     let currentHostname = window.location.href
-    // $("form").submit(function (event) {
-    //     if ($("input").first().val() === "") {  
-    //         return;
-    //     } 
-    //     reloadPage(event)
-    //     event.preventDefault(); 
-    //     console.log(event)
-    //     $(".form-message").show().fadeOut(6000);    
-    // });
-    // function reloadPage(e){  
-    //     setTimeout(() => { 
-    //         e.target.submit(()=>{ 
-    //           console.log('enviado!')
-    //         })   
-    //         $("#form :input").each(function(){
-    //           $(this).val('')
-    //         } )
-    //         // window.location.replace(currentHostname)
-    //     }, 5000) 
-    // }  
+    $("form").submit(function (event) {
+        if ($("input").first().val() === "") {  
+            return;
+        } 
+        reloadPage(event)
+        event.preventDefault(); 
+        console.log(event)
+        $(".form-message").show().fadeOut(6000);    
+    });
+    function reloadPage(e){  
+        setTimeout(() => { 
+            e.target.submit(()=>{ 
+              console.log('enviado!')
+            })   
+            $("#form :input").each(function(){
+              $(this).val('')
+            } )
+            // window.location.replace(currentHostname)
+        }, 5000) 
+    }  
       // Elimina el hash de los links
      
 
