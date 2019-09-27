@@ -98,9 +98,7 @@
         $(".form-message").show().fadeOut(6000);    
     });
     function reloadPage(e){ 
-        $("#form :input").each(function(){
-         $(this).val('')
-         } )
+        
         setTimeout(() => { 
             e.target.submit(()=>{ 
               console.log('enviado!')
@@ -108,6 +106,9 @@
             window.location.replace(currentHostname)
             // window.location.replace(currentHostname)
         }, 5000)
+        $("#form :input").each(function(){
+          $(this).val('')
+        } )
     } 
     
 
