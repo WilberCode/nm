@@ -88,9 +88,12 @@
         if ($("input").first().val() === "") {  
             return;
         } 
-        reloadPage(event)
-        event.preventDefault(); 
-        console.log(event)
+         $("#sendMessage").val('Enviando mensaje...')
+         $("#sendMessage").disabled = true
+
+         reloadPage(event) 
+        event.preventDefault();  
+       
         $(".form-message").show().fadeOut(6000);    
     });
     function reloadPage(e){  
