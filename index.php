@@ -1730,12 +1730,9 @@
      <div class="container ">
         <div class="contact-form-wrap flex flex-wrap">
             <div class="w-full md:w-1/2">
-            <h1 class="akrobat text-white text-2xl">Ingresa tus datos y en breve te atenderemos</h1>
-          <?php  if(isset($_POST['email'])){?>
+            <h1 class="akrobat text-white text-2xl">Ingresa tus datos y en breve te atenderemos</h1> 
             <form id="form" action="<?=$_SERVER['PHP_SELF']?>" method="post"  class="form mt-4 pr-0 lg:pr-30 ">
-              <?php   } else{ ?>
-            <form id="form" class="form mt-4 pr-0 lg:pr-30 "> 
-                 <?php   }  ?>
+             
               <div class="form-group">  
                 <label for="name">Nombres y apellidos</label>
                 <input type="text" class="name" id="name" name="name" required>
