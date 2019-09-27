@@ -101,12 +101,11 @@
         setTimeout(() => { 
             e.target.submit(()=>{ 
               console.log('enviado!')
-            })  
-            // window.location.replace(currentHostname)
-
+            })   
             $("#form :input").each(function(){
               $(this).val('')
             } )
+            window.location.replace(currentHostname)
         }, 5000)
        
     } 
