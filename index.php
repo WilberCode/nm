@@ -1734,7 +1734,7 @@
           <?php  if(isset($_POST['email'])){?>
             <form id="form" action="<?=$_SERVER['PHP_SELF']?>" method="post"  class="form mt-4 pr-0 lg:pr-30 ">
               <?php   } else{ ?>
-            <form id="form" action="<?=$_SERVER['PHP_SELF']?>"   class="form mt-4 pr-0 lg:pr-30 "> 
+            <form id="form" class="form mt-4 pr-0 lg:pr-30 "> 
                  <?php   }  ?>
               <div class="form-group">
                 <label for="name">Nombres y apellidos</label>
