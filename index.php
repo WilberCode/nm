@@ -1736,7 +1736,7 @@
               <?php   } else{ ?>
             <form id="form" class="form mt-4 pr-0 lg:pr-30 "> 
                  <?php   }  ?>
-              <div class="form-group">
+              <div class="form-group">  
                 <label for="name">Nombres y apellidos</label>
                 <input type="text" class="name" id="name" name="name" required>
               </div>
