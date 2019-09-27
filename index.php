@@ -1777,8 +1777,10 @@
                 $to= "wphfrontend@gmail.com";
                 $from = $_POST['email'];
                 $asunto = "Mensaje enviado por: ".$_POST['name'];
-                mail($to,$asunto,$mensaje,"FROM: $from"); 
-                header('Location: http://adretail.pe/nm/');
+                mail($to,$asunto,$mensaje,"FROM: $from");  
+                header("Location: http://adretail.pe/nm/");
+                ob_end_flush();
+                exit;
               }
              
             ?>  
