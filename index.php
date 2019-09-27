@@ -146,7 +146,7 @@
       <div id="gallery-modal-wrap" class="gallery-modal-wrap flex justify-center items-center">
         <div id="gallery-modal" class="gallery-modal text-right">
           <button id="gallery-modal__btn" class="gallery-modal__btn  text-right">X</button>
-          <div id="gallery-modal-img" class="flex justify-center w-full"></div>
+          <div id="gallery-modal-img" class="gallery-modal-img flex justify-center w-full"></div>
           <div id="gallery-modal-caption" class="gallery-modal-caption text-center text-xl font-bold"></div>
         </div>  
       </div> 
@@ -189,21 +189,21 @@
         <div class="container live-wrap mt-16">
           <h1 class="text-jade text-base  text-left sm:text-3xl font-semibold">DECIDE DÓNDE QUIERES VIVIR</h1>
           <div class="live-box w-full mt-6">
-            <div class="live-box__names flex nowrap border-1 border-jade mr-4 mb-2">
+            <div class="live-box__names flex nowrap border-1 border-jade mr-4 mb-2 text-dark">
               <div class="live-box__names-name w-1/6 md:w-2/6 text-center ">
-                <h4 class="text-sm md:text-xl" >Plano</h4>
+                <h1 class="text-sm md:text-xl font-bold " >Plano</h1>
               </div>
               <div class="live-box__names-name w-1/6 text-center ">
-                <h4 class="text-sm md:text-xl" >Dpto</h4>
+                <h1 class="text-sm md:text-xl font-bold " >Dpto</h1>
               </div>
               <div class="live-box__names-name w-1/6 text-center ">
-                <h4 class="text-sm md:text-xl" >Dorm.</h4>
+                <h1 class="text-sm md:text-xl font-bold " >Dorm.</h1>
               </div>
               <div class="live-box__names-name w-2/6 md:w-1/6 text-center ">
-                <h4 class="text-sm md:text-xl" >Área</h4>
+                <h1 class="text-sm md:text-xl font-bold " >Área</h1>
               </div>
               <div class="live-box__names-name w-1/6 text-center ">
-                <h4 class="text-sm md:text-xl" >Precio</h4>
+                <h1 class="text-sm md:text-xl font-bold " >Precio</h1>
               </div>
             </div>
             <div class="live-info"> 
@@ -1751,8 +1751,8 @@
                 <textarea class="w-full h-128 mt-2 p-2 " class="message" id="message" name="message" required></textarea>
               </div>
               <div class="mt-5  text-left sm:text-right ">
-                <button type="submit" class=" w-full sm:w-auto btn btn-send bg-jade">ENVIAR</button>
-              </div>
+                <button type="submit" id="sendMessage" class=" w-full sm:w-auto btn btn-send bg-jade">ENVIAR</button>
+               </div>
             </form>
              <div id="orm-message" class="form-message hidden">
                 <div class="flex mt-8 rounded overflow-hidden ">
@@ -1766,7 +1766,7 @@
              </div>
              <?php 
  
-              if(!empty($_POST['email']) ){
+              if(!empty($_POST['email']) && isset($_POST['email']) ){
                 $mensaje="Mensaje del formulario de contacto de nuevomundoespacios.com.pe";  
                 $mensaje.= "\nNombre y Apellidos ". $_POST['name'];
                 $mensaje.= "\nEmail: ".$_POST['email'];

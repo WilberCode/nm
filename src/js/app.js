@@ -1,5 +1,4 @@
- 
-
+  
     // Shorthand 
     const  Id =  document.getElementById.bind(document)
     const  className =  document.getElementsByClassName.bind(document) 
@@ -11,7 +10,7 @@
 
     navToggle.addEventListener('click', () => {
       navToggle.classList.toggle('nav-toggle-active') 
-      nav.classList.toggle('nav-active') 
+      nav.classList.toggle('nav-active')  
      
      
     })  
@@ -31,27 +30,25 @@
         Id('gallery-modal-img').innerHTML = `<img src="${src}">`
         Id('gallery-modal-caption').innerHTML = `<p>${ e.target.dataset.caption}</p>`
         gallerModalWrap.classList.add('gallery-modal-show')  
-        
+        $("body").css('overflow-y','hidden');
       }else{
         return;
       }  
     });
-    // Close Modal Gallery
-
-
+    // Close Modal Gallery  
     $("#gallery-modal__btn").click(function (e) { 
         gallerModalWrap.classList.remove('gallery-modal-show')
+        $("body").css('overflow-y','auto');
     })  
     $("#gallery-modal-wrap").click(function (e) { 
-    const parentID = e.target.parentNode.parentNode.id 
-    if (parentID !== 'gallery-modal'){
-        gallerModalWrap.classList.remove('gallery-modal-show') 
-    } else{
-        return;
-    }  
-    })
-
-   
+      const parentID = e.target.parentNode.parentNode.id 
+      if (parentID !== 'gallery-modal'){
+          gallerModalWrap.classList.remove('gallery-modal-show') 
+          $("body").css('overflow-y','auto');
+      } else{
+          return;
+      }  
+    }) 
  
     // Plano Modal
     $(".live-info__squard-plane-img-wrap").click(function (e) { 
@@ -60,7 +57,7 @@
             Id('live-modal-img').innerHTML = `<img src="${src}">` 
             Id('live-modal-wrap').classList.add('live-modal-show')  
             Id('departamentos').classList.add('live-no-scroll')      
-
+            $("body").css('overflow-y','hidden');
             } else {
             return;
             }
@@ -68,7 +65,8 @@
     // Close Modal Plano 
     $("#live-modal__btn").click(function (e) { 
         Id('live-modal-wrap').classList.remove('live-modal-show')
-         Id('departamentos').classList.remove('live-no-scroll')
+        Id('departamentos').classList.remove('live-no-scroll')
+        $("body").css('overflow-y','auto');
 
     }) 
 
@@ -77,6 +75,7 @@
         const parentID = e.target.parentNode.id 
         if (parentID !== 'live-modal-img' && e.target.id !== 'live-modal-img' ) {
             Id('live-modal-wrap').classList.remove('live-modal-show')
+            $("body").css('overflow-y','auto');
         } else {
             return;
         }
@@ -93,21 +92,31 @@
         if ($("input").first().val() === "") {  
             return;
         } 
-        // event.preventDefault(); 
+        reloadPage(event)
+        event.preventDefault(); 
+        console.log(event)
         $(".form-message").show().fadeOut(6000);    
-        reloadPage()
     });
-    function reloadPage(){
-        setTimeout(() => {
-            window.location.replace('kjlj.com')
-        }, 8000)
-    }
+    function reloadPage(e){
+      // $("#email").val('') 
+        $("#form :input").each(function(){
+         $(this).val('')
+         } )
+        setTimeout(() => { 
+            e.target.submit(()=>{ 
+             
+            }) 
+            window.location.replace('http://localhost/web-static/nm')
+        }, 5000)
+    } 
+    
 
       // Elimina el hash de los links
 
     $('a[href*="#"]') 
         .not('[href="#"]')
         .not('[href="#0"]')
+        .not('[href="index.php"]')
         .click(function (event) {
             // On-page links
             if (

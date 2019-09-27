@@ -127,6 +127,7 @@ body{
   &-modal{ 
     &-img{
       box-shadow: 0 0 45px 4px rgba(0, 0, 0, 0.28);
+      cursor: default; 
     }
     &__btn{
       position: relative;
@@ -162,11 +163,13 @@ body{
       z-index: -5;
       visibility: hidden;
       transition: all .6s cubic-bezier(0.36, 1.58, 1, 1);
+      cursor: zoom-out; 
       @media (max-width:$md) {
         padding: 1em;
       }
     }
     &-caption{ 
+      cursor: text;
       p {
         font-family: $akrobat;
         text-align: center;
@@ -323,8 +326,7 @@ body{
     border: 1px solid rgba(#000000, .05);
     &__content { 
       height: 100%; 
-      overflow-y: scroll; 
-
+      overflow-y: scroll;   
     }
     &__squard{
       margin-bottom: 1px;
@@ -388,13 +390,21 @@ body{
   } 
   &-modal {
     width: 100%;
-    max-width: 400px;
+    max-width: 540px;
 
     &-img {
       box-shadow: 0 0 45px 4px rgba(0, 0, 0, 0.28);
       width: 100%;
-      max-width: 400px; 
+      max-width: 540px;
       background: white;
+      cursor:default;
+      & img{
+        width: 270px;
+        @media (max-width:$sm) {
+          width: auto;
+          height: 50vh;
+        }
+      }
     }
     &__btn {
       position: relative;
@@ -431,6 +441,7 @@ body{
       z-index: -5;
       visibility: hidden;
       transition: all .6s cubic-bezier(0.36, 1.58, 1, 1);
+      cursor: zoom-out;
       @media (max-width: $md) {
         padding: 1em;
       }
