@@ -1770,7 +1770,7 @@
  
               if(isset($_POST['email']) ){
                 $mensaje="Mensaje del formulario de contacto de nuevomundoespacios.com.pe";  
-                $mensaje.= "\nNombre y Apellidos ". $_POST['name'];
+                $mensaje.= "\nNombre y Apellidos: ". $_POST['name'];
                 $mensaje.= "\nEmail: ".$_POST['email'];
                 $mensaje.= "\nTelefono: ". $_POST['phone'];
                 $mensaje.= "\nMensaje: \n".$_POST['message'];

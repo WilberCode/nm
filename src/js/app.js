@@ -100,8 +100,9 @@
             })   
             $("#form :input").each(function(){
               $(this).val('')
+              window.location.replace(currentHostname) 
             } )
-            // window.location.replace(currentHostname)
+         
         }, 5000) 
     }  
       // Elimina el hash de los links
