@@ -106,7 +106,7 @@
             e.target.submit(()=>{ 
              
             }) 
-            window.location.replace('http://localhost/web-static/nm')
+            window.location.replace(currentHostname)
         }, 5000)
     } 
     
