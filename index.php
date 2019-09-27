@@ -1768,7 +1768,7 @@
              <?php 
          
  
-              if(isset($_POST['submit']) ){
+              if(isset($_POST['email']) ){
                 $mensaje="Mensaje del formulario de contacto de nuevomundoespacios.com.pe";  
                 $mensaje.= "\nNombre y Apellidos ". $_POST['name'];
                 $mensaje.= "\nEmail: ".$_POST['email'];
@@ -1778,6 +1778,7 @@
                 $from = $_POST['email'];
                 $asunto = "Mensaje enviado por: ".$_POST['name'];
                 mail($to,$asunto,$mensaje,"FROM: $from"); 
+                header('Location: /nm/index.php');
               }
              
             ?>  
