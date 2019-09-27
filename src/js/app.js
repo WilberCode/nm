@@ -102,9 +102,10 @@
               console.log('enviado!')
             })   
             $("#form :input").each(function(){
-              $(this).val('')
-              window.location.replace(currentHostname) 
+              $(this).val('') 
             } )
+            //  window.location.replace(currentHostname)
+
          
         }, 5000) 
     }  
