@@ -97,13 +97,13 @@
         console.log(event)
         $(".form-message").show().fadeOut(6000);    
     });
-    function reloadPage(e){ 
-        
+    function reloadPage(e){  
         setTimeout(() => { 
             e.target.submit(()=>{ 
               console.log('enviado!')
             })  
             // window.location.replace(currentHostname)
+
             $("#form :input").each(function(){
               $(this).val('')
             } )
