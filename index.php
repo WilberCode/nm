@@ -1731,7 +1731,7 @@
         <div class="contact-form-wrap flex flex-wrap">
             <div class="w-full md:w-1/2">
             <h1 class="akrobat text-white text-2xl">Ingresa tus datos y en breve te atenderemos</h1>
-          <?php  if(!empty($_POST['email']) && !isset($_POST['email']) ){?>
+          <?php  if(!empty($_POST['email'])){?>
             <form id="form" action="<?=$_SERVER['PHP_SELF']?>" method="post"  class="form mt-4 pr-0 lg:pr-30 ">
               <?php   } else{ ?>
             <form id="form" action="<?=$_SERVER['PHP_SELF']?>"   class="form mt-4 pr-0 lg:pr-30 "> 
@@ -1771,7 +1771,7 @@
              <?php 
          
  
-              if(!empty($_POST['email']) && !isset($_POST['email']) ){
+              if(!empty($_POST['email']) ){
                 $mensaje="Mensaje del formulario de contacto de nuevomundoespacios.com.pe";  
                 $mensaje.= "\nNombre y Apellidos ". $_POST['name'];
                 $mensaje.= "\nEmail: ".$_POST['email'];
