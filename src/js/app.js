@@ -1,5 +1,4 @@
-  
-    // Shorthand 
+  // Shorthand 
     const  Id =  document.getElementById.bind(document)
     const  className =  document.getElementsByClassName.bind(document) 
     const  tagName =  document.getElementsByTagName.bind(document) 
@@ -80,10 +79,7 @@
             return;
         }
     })
-
-
    
-
     let formMessage = Id('form-message')
     let form = Id('form') 
 
@@ -92,9 +88,12 @@
         if ($("input").first().val() === "") {  
             return;
         } 
-        reloadPage(event)
-        event.preventDefault(); 
-        console.log(event)
+         $("#sendMessage").val('Enviando mensaje...')
+         $("#sendMessage").disabled = true
+
+         reloadPage(event) 
+        event.preventDefault();  
+       
         $(".form-message").show().fadeOut(6000);    
     });
     function reloadPage(e){  
@@ -103,9 +102,11 @@
               console.log('enviado!')
             })   
             $("#form :input").each(function(){
-              $(this).val('')
+              $(this).val('') 
             } )
-            window.location.replace(currentHostname)
+            //  window.location.replace(currentHostname)
+
+         
         }, 5000) 
     }  
       // Elimina el hash de los links

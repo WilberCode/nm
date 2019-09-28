@@ -1730,9 +1730,10 @@
      <div class="container ">
         <div class="contact-form-wrap flex flex-wrap">
             <div class="w-full md:w-1/2">
-            <h1 class="akrobat text-white text-2xl">Ingresa tus datos y en breve te atenderemos</h1>
+            <h1 class="akrobat text-white text-2xl">Ingresa tus datos y en breve te atenderemos</h1> 
             <form id="form" action="<?=$_SERVER['PHP_SELF']?>" method="post"  class="form mt-4 pr-0 lg:pr-30 ">
-              <div class="form-group">
+             
+              <div class="form-group">  
                 <label for="name">Nombres y apellidos</label>
                 <input type="text" class="name" id="name" name="name" required>
               </div>
@@ -1765,17 +1766,18 @@
                 </div>
              </div>
              <?php 
+         
  
-              if(!empty($_POST['email']) && isset($_POST['email']) ){
+              if(isset($_POST['email']) ){
                 $mensaje="Mensaje del formulario de contacto de nuevomundoespacios.com.pe";  
-                $mensaje.= "\nNombre y Apellidos ". $_POST['name'];
+                $mensaje.= "\nNombre y Apellidos: ". $_POST['name'];
                 $mensaje.= "\nEmail: ".$_POST['email'];
                 $mensaje.= "\nTelefono: ". $_POST['phone'];
                 $mensaje.= "\nMensaje: \n".$_POST['message'];
-                $destino= "wphfrontend@gmail.com";
-                $remitente = $_POST['email'];
+                $to= "wphfrontend@gmail.com";
+                $from = $_POST['email'];
                 $asunto = "Mensaje enviado por: ".$_POST['name'];
-                mail($destino,$asunto,$mensaje,"FROM: $remitente"); 
+                mail($to,$asunto,$mensaje,"FROM: $from");   
               }
              
             ?>  
