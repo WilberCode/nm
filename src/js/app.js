@@ -110,7 +110,10 @@
         }, 5000) 
     }  
       // Elimina el hash de los links
-     
+    //   setTimeout(() => {  
+    //     window.location.replace(currentHostname)
+        
+    // }, 4000) 
 
     $('a[href*="#"]') 
         .not('[href="#"]')
