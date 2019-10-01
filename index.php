@@ -1912,6 +1912,8 @@
 
 
   <script>
+
+ 
     $('.owl-carousel').owlCarousel({
       margin:0,
       loop: true,

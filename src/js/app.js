@@ -103,12 +103,19 @@
             })   
             $("#form :input").each(function(){
               $(this).val('') 
-            } )
-            //  window.location.replace(currentHostname)
+             
 
+            } )
+            //  window.location.replace(currentHostname) 
          
         }, 5000) 
     }  
+      if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+      }
+
+ 
+
       // Elimina el hash de los links
     //   setTimeout(() => {  
     //     window.location.replace(currentHostname)
