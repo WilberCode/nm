@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /cache/
+Disallow: /configs/
+Disallow: /templates/
+Disallow: /util/
+Sitemap: http://test.nuevomundoespacios.com.pe/sitemap.xml

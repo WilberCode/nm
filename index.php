@@ -1,31 +1,34 @@
 <?php $ruta_web = 'http://adretail.pe/nm'; ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ES">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <meta name="decription" content="El Grupo Nuevo Mundo Inmobiliaria cuenta con la experiencia de más de 14 años en la construcción, gerencia de proyectos y
-    administración de centros empresariales y hoteles, lo que nos permite ofrecer hoy, departamentos con espacios que cubran
-    las expectativas y exigencias del mercado.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="title" content="Nuevo Mundo Espacios" >
+    <meta name="decription" content="Te damos el espacio que necesitas
+En departamentos amplios, funcionales y perfectamente distribuidos que se adaptan a tu estilo de vida.">
+    <meta name="keywords" content="Departamentos con Acabados y diseño de excelente
+relación calidad Cocina integrada o independiente Estacionamientos y depósitos Seguridad integral en el edificio
+y departamentos 02 ascensores Gas natural doméstico">
     <meta name="theme-color" content="#00a8ac" class="next-head">
-    <meta property="og:type" content="website">
     <meta property="og:title" content="NUEVO MUNDO ESPACIOS">
-    <meta property="og:description" content="El Grupo Nuevo Mundo Inmobiliaria cuenta con la experiencia de más de 14 años en la construcción, gerencia de proyectos y administración de centros empresariales y hoteles, lo que nos permite ofrecer hoy, departamentos con espacios que cubran
-          las expectativas y exigencias del mercado.">
+    <meta property="og:description" content="Te damos el espacio que necesitas
+En departamentos amplios, funcionales y perfectamente distribuidos que se adaptan a tu estilo de vida.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_PE">
     <meta property="og:url" content="nuevomundoespacios.com.pe">
-    <meta property="og:site_name" content="NM ESPACIOS">
-    <meta property="og:image" content="img/logonm.png">
-    <meta property="og:image:secure_url" content="img/logonm.png">
+    <meta property="og:site_name" content="NM ESPACIOS - Te ofrecemos departamentos con espacios que cubren las expectativas y exigencias del mercado">
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="600">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="l Grupo Nuevo Mundo Inmobiliaria cuenta con la experiencia de más de 14 años en la construcción, gerencia de proyectos y
-      administración de centros empresariales y hoteles, lo que nos permite ofrecer hoy, departamentos con espacios que cubran
-      las expectativas y exigencias del mercado.">
-    <meta name="twitter:title" content="NM ESPACIOS">
+    <meta property="og:image" content="img/logonm.png">
+    <meta property="og:image:secure_url" content="img/logonm.png">
     <meta name="twitter:image" content="img/logonm.png">
+    <meta property="twitter:site" content="@NMespacios">
+    <meta name="twitter:title" content="NM ESPACIOS">
+    <meta name="twitter:description" content="Te damos el espacio que necesitas
+En departamentos amplios, funcionales y perfectamente distribuidos que se adaptan a tu estilo de vida.">
+    <meta name="twitter:card" content="summary_large_image">
 
     <link rel="shortcut icon" href="img/svg/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="dist/css/slick.css" /> 
@@ -185,7 +188,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center " id="plano1"> 
-                       <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/101.png" alt="">
+                       <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/101.png" alt="plano">
                   </div>
                   <button class="live-info__squard-btn absolute left-0 top-0 "> 
                   </button>
@@ -228,7 +231,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/103.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/103.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -273,7 +276,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/201.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/201.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -315,7 +318,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/202.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/202.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -357,7 +360,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/203.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/203.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -399,7 +402,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/204.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/204.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -441,7 +444,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/205.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/205.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -483,7 +486,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/206.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/206.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -525,7 +528,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/301.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/301.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -567,7 +570,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/302.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/302.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -609,7 +612,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/303.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/303.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -651,7 +654,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/304.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/304.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -693,7 +696,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/305.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/305.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -735,7 +738,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/306.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/306.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -778,7 +781,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/401.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/401.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -821,7 +824,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/402.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/402.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -863,7 +866,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/403.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/403.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -905,7 +908,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/404.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/404.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -947,7 +950,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/405.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/405.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -989,7 +992,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/406.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/406.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -1032,7 +1035,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/501.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/501.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -1074,7 +1077,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/502.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/502.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -1116,7 +1119,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/503.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/503.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -1158,7 +1161,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/504.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/504.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -1201,7 +1204,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/505.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/505.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -1243,7 +1246,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/506.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/506.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -1285,7 +1288,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/601.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/601.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -1327,7 +1330,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/602.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/602.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -1371,7 +1374,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/603.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/603.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -1415,7 +1418,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/604.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/604.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -1457,7 +1460,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/605.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/605.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -1499,7 +1502,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/606.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/606.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -1541,7 +1544,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/702.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/702.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -1586,7 +1589,7 @@
                <div class="live-info__squard w-full flex flex-nowrap ">
                 <div     class="live-info__squard-plane relative w-1/6 md:w-2/6 py-1 text-center border-r border-white flex  justify-center items-center bg-gray-200">
                   <div class="live-info__squard-plane-img-wrap text-center">
-                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/703.png" alt="">
+                    <img class="live-info__squard-plane-img h-220 w-auto" src="img/planos/703.png" alt="plano">
                   </div>
                         
                   <button class="live-info__squard-btn absolute left-0 top-0 ">
@@ -1717,7 +1720,7 @@
                   </div>
                   <div class="form-group w-full mt-5  sm:mt-0 sm:w-1/3">
                     <label for="phone">Teléfono</label>
-                    <input type="tel" class="phone" maxlength="9" id="phone" name="phone" required>
+                    <input type="tel" class="phone" maxlength="9" id="phone" name="phone" minlength="5" pattern="[0-9]{2,4}" required>
                   </div>
               </div>
               <div class="form-group mt-5">
@@ -1782,27 +1785,27 @@
         <div class="flex flex-wrap -mx-1 mb-2">
           <div class="w-1/2 sm:w-1/2 md:w-1/3 px-1 mb-2">
             <div class="bg-gray-400   "  data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
-              <img class="w-full" src="img/projects/proyectosant-01.png" alt="">
+              <img class="w-full" src="img/projects/proyectosant-01.png" alt="proyecto 1">
             </div>
           </div>
           <div class="w-1/2 sm:w-1/2 md:w-1/3 px-1 mb-2 " data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
             <div class="bg-gray-500  ">
-                <img class="w-full" src="img/projects/proyectosant-02.png" alt="">
+                <img class="w-full" src="img/projects/proyectosant-02.png" alt="proyecto 2">
             </div>
           </div>
           <div class="w-1/2 sm:w-1/2 md:w-1/3 px-1 mb-2 " data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
             <div class="bg-gray-400  ">
-                <img class="w-full" src="img/projects/proyectosant-03.png" alt="">
+                <img class="w-full" src="img/projects/proyectosant-03.png" alt="proyecto 3">
             </div>
           </div>
           <div class="w-1/2 sm:w-1/2 md:w-1/3 px-1 mb-2 sm:mb-0 " data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800" >
                       <div class="bg-gray-400  ">
-                        <img class="w-full " src="img/projects/proyectosant-04.png " alt=" ">
+                        <img class="w-full " src="img/projects/proyectosant-04.png " alt="proyecto 4">
                       </div>
             </div>
             <div class="w-1/2 sm:w-1/2 md:w-1/3 px-1 mb-2 sm:mb-0 "  data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
               <div class="bg-gray-500  ">
-                <img class="w-full" src="img/projects/proyectosant-05.png" alt="">
+                <img class="w-full" src="img/projects/proyectosant-05.png" alt="proyecto 5">
               </div>
            </div>
           <div class="w-full xs:w-1/2 sm:w-1/2 md:w-1/3 px-1 mb-2 sm:mb-0 flex items-end" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
