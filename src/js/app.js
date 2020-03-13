@@ -26,7 +26,7 @@
     $("#gallery").click(function (e) {
       let src = e.target.currentSrc
       if(src !== undefined){  
-        Id('gallery-modal-img').innerHTML = `<img src="${src}">`
+        Id('gallery-modal-img').innerHTML = `<img src="${src}" style="max-width: 650px;" >`
         Id('gallery-modal-caption').innerHTML = `<p>${ e.target.dataset.caption}</p>`
         gallerModalWrap.classList.add('gallery-modal-show')  
         $("body").css('overflow-y','hidden');
@@ -116,11 +116,7 @@
 
  
 
-      // Elimina el hash de los links
-    //   setTimeout(() => {  
-    //     window.location.replace(currentHostname)
-        
-    // }, 4000) 
+      // Elimina el hash de los links 
 
     $('a[href*="#"]') 
         .not('[href="#"]')
@@ -150,4 +146,6 @@
                 }
             }
         }); 
+
+
 

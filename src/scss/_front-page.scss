@@ -126,8 +126,11 @@ body{
     } 
   &-modal{ 
     &-img{
-      box-shadow: 0 0 45px 4px rgba(0, 0, 0, 0.28);
-      cursor: default; 
+      box-shadow: 0 0 45px 4px rgba(0, 0, 0, 0.28); 
+  
+      img{
+      cursor: pointer;
+      }
     }
     &__btn{
       position: relative;
@@ -162,8 +165,7 @@ body{
       opacity: 0;
       z-index: -5;
       visibility: hidden;
-      transition: all .6s cubic-bezier(0.36, 1.58, 1, 1);
-      cursor: zoom-out; 
+      transition: all .6s cubic-bezier(0.36, 1.58, 1, 1); 
       @media (max-width:$md) {
         padding: 1em;
       }
@@ -186,7 +188,7 @@ body{
     &-show{
       opacity: 1;
       z-index: 1000;
-      visibility: visible;  
+      visibility: visible;   
     }
   } 
 } 

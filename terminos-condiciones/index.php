@@ -1,5 +1,7 @@
-<?php $ruta_web = 'http://adretail.pe/nm'; ?>
-
+<?php 
+ include '../includes/config.php';
+ $menu_interior = 1;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,10 +18,10 @@
       <meta property="og:title" content="NUEVO MUNDO ESPACIOS">
       <meta property="og:description" content="El Grupo Nuevo Mundo Inmobiliaria cuenta con la experiencia de más de 14 años en la construcción, gerencia de proyectos y administración de centros empresariales y hoteles, lo que nos permite ofrecer hoy, departamentos con espacios que cubran
                 las expectativas y exigencias del mercado.">
-      <meta property="og:url" content="https://nmespacios.com">
+      <meta property="og:url" content="<?= $ruta_web ?>">
       <meta property="og:site_name" content="NM ESPACIOS">
-      <meta property="og:image" content="img/logonm.png">
-      <meta property="og:image:secure_url" content="../img/logonm.png">
+      <meta property="og:image" content="<?= $ruta_web ?>img/logonm.png">
+      <meta property="og:image:secure_url" content="<?= $ruta_web ?>img/logonm.png">
       <meta property="og:image:width" content="800">
       <meta property="og:image:height" content="600">
       <meta name="twitter:card" content="summary_large_image">
@@ -27,68 +29,34 @@
             administración de centros empresariales y hoteles, lo que nos permite ofrecer hoy, departamentos con espacios que cubran
             las expectativas y exigencias del mercado.">
       <meta name="twitter:title" content="NM ESPACIOS">
-      <meta name="twitter:image" content="../img/logonm.png">
+      <meta name="twitter:image" content="<?= $ruta_web ?>img/logonm.png">
 
-  <link rel="stylesheet" href="../dist/css/slick.css" />
-  <link rel="stylesheet" href="../dist/owl/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" href="../dist/owl/assets/owl.theme.default.min.css" />
-  <link rel="stylesheet" href="../dist/owl/assets/owl.theme.green.min.css" />
-  <link rel="stylesheet" type="text/css" href="../dist/css/slick-theme.css" />
-  <link rel="stylesheet" type="text/css" href="../dist/css/slick.css" />
-  <link rel="stylesheet" type="text/css" href="../dist/css/aos.css" /> 
+  <link rel="stylesheet" href="<?= $ruta_web ?>dist/css/slick.css" />
+  <link rel="stylesheet" href="<?= $ruta_web ?>dist/owl/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="<?= $ruta_web ?>dist/owl/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="<?= $ruta_web ?>dist/owl/assets/owl.theme.green.min.css" />
+  <link rel="stylesheet" type="text/css" href="<?= $ruta_web ?>dist/css/slick-theme.css"/> 
+  <link rel="stylesheet" type="text/css" href="<?= $ruta_web ?>dist/css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="<?= $ruta_web ?>dist/css/aos.css" /> 
   <script type="text/javascript" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js?ver=5.0"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
     rel="stylesheet">
   <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
   
-  <link rel="stylesheet" href="../dist/fonts/styles.css"> 
-  <link rel="stylesheet" href="../dist/css/tailwindcss-dist.css"/>
-  <link rel="stylesheet" href="../dist/css/style.css"/>
-  <title> TÉRMINOS Y CONDICIONES - nm espacios</title>
-  
+  <link rel="stylesheet" href="<?= $ruta_web ?>dist/fonts/styles.css"> 
+  <link rel="stylesheet" href="<?= $ruta_web ?>dist/css/tailwindcss.css"/>
+  <link rel="stylesheet" href="<?= $ruta_web ?>dist/css/style.css"/> 
+  <title> TÉRMINOS Y CONDICIONES - nm espacios</title> 
+
 </head>
 
 <body>
   <div id="app" class="app">
-    <header class="header shadow w-full h-auto  ">
-      <div id="header-wrap" class=" bg-white relative flex flex-wrap justify-between container h-105  lg:h-105">
-        <div class="logo relative z-50">
-           <a href="<?= $ruta_web ?>">
-              <img src="../img/logonm.png" alt="Logo nm espacios" />
-            </a>
-        </div>
-        <div class="block lg:hidden mt-4 lg:mt-0 h-48 relative z-50">
-          <button  id="nav-toggle" class="nav-toggle focus:outline-none">  
-              <span ></span> 
-              <span ></span> 
-              <span ></span> 
-              <span ></span> 
-              <span ></span> 
-              <span ></span>  
-          </button>
-        </div>
-        <nav id="nav" class="nav z-40  absolute lg:relative w-full lg:w-auto lg:flex  justify-end lg:items-center   h-auto lg:h-105 ">
-          <ul id="menu" class="menu w-full lg:flex  justify-end lg:items-center  lg:w-auto first-medium">
-            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="<?= $ruta_web ?>/#ubicacion">UBICACIÓN</a></li> 
-            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="<?= $ruta_web ?>/#contacto">CONTACTO</a></li>
-            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="<?= $ruta_web ?>/#departamentos">DEPARTAMENTOS</a></li>
-            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="<?= $ruta_web ?>/#transparencia">TRANSPARENCIA</a></li>
-            <li class="menu-item"><a class="menu__link lg:px-4  lg:inline-block" href="<?= $ruta_web ?>/#nosotros">NOSOTROS</a></li>
-          </ul>
-        </nav>
-      </div> 
-    </header> 
-  <div class="w-full encabezado relative z-10 flex justify-end parallax-window  py-6" data-parallax="scroll" data-image-src="../img/bg-encabezado.jpg">
-    <div class="encabezado-content w-full md:max-w-lg  text-center md:text-left py-5 px-6 "  data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
-      <div>
-        <img class="h-20 sm:h-40   " src="../img/encabezado-text.png" alt="">
-      </div>
-    </div>
-  </div>
+    <?php include '../includes/header.php' ?>
     
     <div class="banner">
       <div class="w-full">
-        <img class="w-full h-400 xl:h-600 object-cover object-center " src="../img/slider/slider-2.png"alt="">
+        <img class="w-full h-400 xl:h-600 object-cover object-center " src="<?= $ruta_web ?>img/slider/slider-2.png"alt="">
       </div>
     </div>
     <div class="document pt-16 ">
@@ -106,9 +74,9 @@
         </p>
         <p class="text-lg mt-6" > 
            En el proyecto denominado <strong>“Edificio Multifamiliar Rutté I”</strong> , el proveedor inmobiliario lleva la denominación social <strong>Centro Inmobiliario Rutté I S.A.C.</strong>, que es una empresa integrante del <strong>Grupo Nuevo Mundo Inmobiliaria</strong> , identificada con el RUC N°
-          20603860153 <a href="https://www.urbanaperu.com.pe/wp-content/uploads/2018/07/Capiente-ficha-ruc.pdf" target="_blank"  class="text-blue-500" >(descargar Ficha RUC)</a> , bajo la marca <strong>“NUEVO MUNDO ESPACIOS”</strong> y que se encuentra representada por su gerente general
+          20603860153 <a href="<?= $ruta_web ?>pdf/FICHA-RUC-RUTTE.pdf" target="_blank"  class="text-blue-500"  >(descargar Ficha RUC)</a> , bajo la marca <strong>“NUEVO MUNDO ESPACIOS”</strong> y que se encuentra representada por su gerente general
           señor David César Forno Céspedes, con DNI N° 06671164 y demás apoderados, cuyos nombramientos constan inscritos en la Partida
-          Electrónica N° 14198536 del Registro de Personas Jurídicas de la Oficina Registral de Lima <a href="https://www.urbanaperu.com.pe/wp-content/uploads/2018/07/Capiente-partida-registral.pdf" target="_blank" class="text-blue-500">(descargar Partida Registral).</a>
+          Electrónica N° 14198536 del Registro de Personas Jurídicas de la Oficina Registral de Lima <a href="<?= $ruta_web ?>pdf/CRI-RUTTE.pdf" target="_blank"  class="text-blue-500">(descargar Partida Registral).</a>
         </p>
         <p class="text-lg mt-6" > 
           <strong> Centro Inmobiliario Rutté I S.A.C.</strong> (en adelante <strong>NUEVO MUNDO ESPACIOS</strong>) se encuentra domiciliado en calle Francisco Del Castillo
@@ -143,18 +111,14 @@
         <p class="text-lg mt-6" > 
          A continuación, se proporcionan los siguientes links, para que el Usuario pueda obtener, de manera gratuita, la siguiente
         documentación informativa:
-        </p>
-        <p class="text-lg mt-6" > 
-         A continuación, se proporcionan los siguientes links, para que el Usuario pueda obtener, de manera gratuita, la siguiente
-        documentación informativa:
-        </p>
+        </p> 
 
        <h2 class="font-bold mt-6">Partida registral matriz de proyecto</h2>
-       <a href="https://www.urbanaperu.com.pe/wp-content/uploads/2018/07/partida-registral-matriz-proyecto-allegro.pdf" target="_blank" class="text-blue-500" >Edificio Multifamiliar Rutté I</a>
+       <a href="<?= $ruta_web ?>pdf/CRI-RUTTE.pdf" target="_blank"   class="text-blue-500" >Edificio Multifamiliar Rutté I</a>
         <h2 class="font-bold mt-6">Aprobación de anteproyecto</h2>
-        <a href="https://www.urbanaperu.com.pe/wp-content/uploads/2018/07/partida-registral-matriz-proyecto-allegro.pdf" target="_blank" class="text-blue-500">Edificio Multifamiliar Rutté I</a>
+        <a href="<?= $ruta_web ?>pdf/RESOLUCION-DE-LICENCIA-N°-245-2019-GDUO-MDMM-(PROY-RUTTE).pdf"  target="_blank" class="text-blue-500">Edificio Multifamiliar Rutté I</a>
         <h2 class="font-bold mt-6">HR PU y pago predial 2019 de proyecto</h2>
-        <a href="https://www.urbanaperu.com.pe/wp-content/uploads/2018/07/partida-registral-matriz-proyecto-allegro.pdf" target="_blank" class="text-blue-500">Edificio Multifamiliar Rutté I</a>
+        <a href="<?= $ruta_web ?>pdf/PU-Y-HR-RUTTE.pdf" target="_blank"  class="text-blue-500">Edificio Multifamiliar Rutté I</a>
 
     <p class="text-lg mt-6">
      Asimismo, se proporcionan, gratuitamente, la <strong>Memoria Descriptiva </strong>y el <strong>Cuadro de Acabados</strong> , que describen de manera detallada
@@ -166,13 +130,13 @@
     </p>
     
     <h2 class="font-bold mt-6">Memoria Descriptiva y Cuadro de Acabados - Proyecto</h2>
-    <a href="https://www.urbanaperu.com.pe/wp-content/uploads/2018/07/partida-registral-matriz-proyecto-allegro.pdf" target="_blank" class="text-blue-500">Edificio Multifamiliar Rutté I</a>
-    <a href="https://www.urbanaperu.com.pe/wp-content/uploads/2018/07/partida-registral-matriz-proyecto-allegro.pdf" target="_blank" class="text-blue-500">Edificio Multifamiliar Rutté I</a>
+    <a href="<?= $ruta_web ?>pdf/MEMORIA-DESCRIPTIVA-RUTTE-I-PAGWEB.pdf" target="_blank"   class="text-blue-500">Edificio Multifamiliar Rutté I</a> <br>
+   <!-- <a href="https://www.urbanaperu.com.pe/wp-content/uploads/2018/07/partida-registral-matriz-proyecto-allegro.pdf" target="_blank" class="text-blue-500">Edificio Multifamiliar Rutté I</a>-->
 
     <p class="text-lg mt-6">
        Se informa que todas las unidades inmobiliarias de nuestro proyecto son bienes futuros, es decir, su existencia física estará
       sujeta a la condición que sean construidas y entregadas a cada cliente. También se le informa que el área y medidas perimétricas
-      de las unidades inmobiliarias y las que son consignadas en los planos de distribución que le serán entregados<a href="https://www.urbanaperu.com.pe/wp-content/uploads/2018/07/Capiente-partida-registral.pdf" target="_blank" class="text-blue-500"> (descargar
+      de las unidades inmobiliarias y las que son consignadas en los planos de distribución que le serán entregados<a href="<?= $ruta_web ?>pdf/planos.pdf" target="_blank"  class="text-blue-500" > (descargar
       Planos)</a>, tienen carácter referencial, precisando que las áreas y medidas perimétricas finales serán las establecidas en la
       Declaratoria de Fábrica, Reglamento Interno e Independización, los que serán debidamente inscritos en el Registro de Propiedad
       Inmueble de la Oficina Registral de Lima. La numeración definitiva de las unidades inmobiliarias será la que asigne la Municipalidad
@@ -242,57 +206,16 @@ de la etapa del proyecto y las condiciones de pago que serán debida y expresame
         
       </div>
     </div>
-     
-
-
   
-
-
-  <footer class="footer mt-20 px-6 lg:px-24 bg-medium">
-    <div class="footer-wrap">
-      <section class=" block sm:flex flex-wrap ">
-        <div class="w-full md:w-1/2 block md:flex">
-          <div class=" w-full md:w-1/3">
-            <a href="<?= $ruta_web ?>">
-              <img class="w-16  md:w-20 lg:w-32 xl:w-40 " src="../img/logonm-footer.png" alt="" />
-            </a>
-          </div>
-          <div class=" w-full md:w-2/3 footer-legal mt-10 md:mt-16 " id="transparencia">
-            <p class="mb-3">
-              <a href="<?= $ruta_web ?>/terminos-condiciones"> TÉRMINOS Y CONDICIONES </a>
-            </p>
-            <p class="mb-3">
-              <a href="<?= $ruta_web ?>/uso-datos-personales"> USO DE DATOS PERSONALES </a>
-            </p>
-            <p class="mb-3">
-              <a href="<?= $ruta_web ?>/politica-privacidad-web"> POLÍTICA DE PRIVACIDAD WEB </a>
-            </p>
-          </div>
-        </div>
-        <div class="w-full md:w-1/2 mt-8 sm:mt-16">
-          <p class="text-white font-thin text-sm text-center md:text-left">Las imágenes, planos y características mostradas en este catálogo son referenciales y podrían mostrar modificaciones
-            en el transcurso del proyecto sin previo aviso, por razones municipales, técnicas o por falta de NUEVO MUNDO disponibilidad
-            de materiales en el mercado.</p>
-        </div>
-      </section>
-      <section class="block md:flex flex-wrap mt-10 md:mt-20 pb-10 ">
-        <div class=" w-full md:w-1/2  ">
-          <p class="text-white font-thin text-sm text-center md:text-left ">nm espacios© Copyright 2019 Una empresa del Grupo Nuevo Mundo</p>
-        </div>
-        <div class="w-full md:w-1/2 mt-5 md:mt-0  ">
-          <p class=" text-center md:text-right text-white font-thin text-sm ">Diseño web por Grupo Tendenze Comunicaciones</p>
-        </div>
-      </section>
-  </footer>
-
-  </div>
-  <script src="../dist/js/jquery-3.3.1.min.js"></script>
-  <script src="../dist/js/parallax.min.js"></script>
-  <script src="../dist/js/slick.js"></script>
-  <script src="../dist/js/ready.js"></script>
-  <script src="../dist/owl/owl.carousel.min.js"></script>
-  <script src="../dist/js/aos.js"></script>
-  <script src="../dist/js/app.js"></script>
+ <?php include '../includes/footer.php' ?>
+  
+  <script src="<?= $ruta_web ?>dist/js/jquery-3.3.1.min.js"></script>
+  <script src="<?= $ruta_web ?>dist/js/parallax.min.js"></script>
+  <script src="<?= $ruta_web ?>dist/js/slick.js"></script>
+  <script src="<?= $ruta_web ?>dist/js/ready.js"></script>
+  <script src="<?= $ruta_web ?>dist/owl/owl.carousel.min.js"></script>
+  <script src="<?= $ruta_web ?>dist/js/aos.js"></script>
+  <script src="<?= $ruta_web ?>dist/js/app.js"></script>
 
   <script>
     $('.owl-carousel').owlCarousel({
